@@ -1,1 +1,0 @@
-Welcome to my portfolio, where I showcase projects rooted in the realms of AI and data analysis. From predictive modeling to machine learning algorithms, each project highlights my expertise in harnessing data to drive insights and innovation. Dive in to discover how I leverage cutting-edge technologies to solve complex problems and unlock new opportunities.

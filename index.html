@@ -1,879 +1,1550 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Mohammad Sayeed</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="images/letter-s.png" rel="icon" />
+    <title>Sayeed's portfolio</title>
+    <meta
+      name="description"
+      content="Simone is responsive bootstrap 5 one page personal portfolio html template."
+    />
+    <meta name="author" content="harnishdesign.net" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <!-- Favicons -->
-    <link href="img/favicon2.png" rel="icon" />
-    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <!-- Web Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Bootstrap CSS File -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Libraries CSS Files -->
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-
-    <!-- Main Stylesheet File -->
-    <link href="css/style.css" rel="stylesheet" />
-
-    <!-- =======================================================
-    Theme Name: DevFolio
-    Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
+    <!-- Stylesheet
+============================== -->
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/font-awesome/css/all.min.css"
+    />
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/owl.carousel/assets/owl.carousel.min.css"
+    />
+    <!-- Magnific Popup -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/magnific-popup/magnific-popup.min.css"
+    />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <!-- Colors Css -->
+    <link id="color-switcher" type="text/css" rel="stylesheet" href="#" />
   </head>
 
-  <body id="page-top">
-    <!--/ Nav Star /-->
-    <nav
-      class="navbar navbar-b navbar-trans navbar-expand-md fixed-top"
-      id="mainNav"
-    >
-      <div class="container">
-        <a class="navbar-brand js-scroll" href="#page-top">Portfolio</a>
-        <button
-          class="navbar-toggler collapsed"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarDefault"
-          aria-controls="navbarDefault"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <div
-          class="navbar-collapse collapse justify-content-end"
-          id="navbarDefault"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link js-scroll active" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll" href="#service">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll" href="#work">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll" href="#blog">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!--/ Nav End /-->
-
-    <!--/ Intro Skew Star /-->
-    <div
-      id="home"
-      class="intro route bg-image"
-      style="background-image: url(img/home-img.jpg)"
-    >
-      <div class="overlay-itro"></div>
-      <div class="intro-content display-table">
-        <div class="table-cell">
-          <div class="container">
-            <!--<p class="display-6 color-d">Hello, world!</p>-->
-            <h1 class="intro-title mb-4">I am Mohammad Sayeed</h1>
-            <p class="intro-subtitle">
-              <span class="text-slider-items">AI Developer,AI Enthusiast</span
-              ><strong class="text-slider"></strong>
-            </p>
-            <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-          </div>
-        </div>
+  <body
+    class="side-header"
+    data-bs-spy="scroll"
+    data-bs-target="#header-nav"
+    data-bs-offset="1"
+  >
+    <!-- Preloader -->
+    <div class="preloader preloader-dark">
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </div>
-    <!--/ Intro Skew End /-->
+    <!-- Preloader End -->
 
-    <section id="about" class="about-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img
-                          src="img/photo.JPG"
-                          class="img-fluid rounded b-shadow-a"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p>
-                          <span class="title-s">Name: </span>
-                          <span>Mohammad Sayeed</span>
-                        </p>
-                        <p>
-                          <span class="title-s">Profile: </span>
-                          <span>AI Developer</span>
-                        </p>
-                        <p>
-                          <span class="title-s">Email: </span>
-                          <span>khansayeed25519@gmail.com</span>
-                        </p>
-                        <p>
-                          <span class="title-s">Phone: </span>
-                          <span>+919565778060</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-mf">
-                    <p class="title-s">Skills</p>
-                    <span>Python</span> <span class="pull-right">90%</span>
-                    <div class="progress">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        style="width: 90%"
-                        aria-valuenow="90"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                    <span>ML</span> <span class="pull-right">85%</span>
-                    <div class="progress">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        style="width: 85%"
-                        aria-valuenow="85"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                    <span>Deep Learning</span>
-                    <span class="pull-right">85%</span>
-                    <div class="progress">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        style="width: 85%"
-                        aria-valuenow="85"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                    <span>Computer Vision</span>
-                    <span class="pull-right">90%</span>
-                    <div class="progress">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        style="width: 90%"
-                        aria-valuenow="90"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                    <span>NLP</span> <span class="pull-right">85%</span>
-                    <div class="progress">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        style="width: 85%"
-                        aria-valuenow="85"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">About me</h5>
-                    </div>
-                    <p class="lead">
-                      Welcome! I'm an AI Developer passionate about crafting
-                      intelligent solutions. With expertise in areas like
-                      Computer Vision, Natural Language Processing, and
-                      Conversational AI, I specialize in creating innovative
-                      applications. I thrive on solving complex problems and
-                      staying at the cutting edge of AI technology.
-                    </p>
-                    <p class="lead">
-                      My expertise spans a diverse range of domains within the
-                      AI landscape, with a focus on three key pillars: Computer
-                      Vision Mastery , Natural Language Processing Excellence ,
-                      Conversational AI Innovation.
-                    </p>
-                    <p class="lead">
-                      I thrive on the challenge of solving complex problems and staying at the forefront of AI technology. If you're looking to elevate your projects to new heights, I'm eager to collaborate and bring my expertise to the table. Let's embark on a journey of innovation together!
-                    </p>
-                    <br>
-                    <a href="./img/Mohammad-Sayeed-Resume.pdf" download="Mohammad-Sayeed-Resume" target="_blank" style="background-color: #0062d3; /* Changed color */ border: none; color: white; padding: 10px 20px; /* Adjusted padding */ text-align: center; text-decoration: none; display: inline-block; font-size: 14px; /* Adjusted font size */ margin: 4px 2px; transition-duration: 0.4s; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">
-                      Download Resume
-                  </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Document Wrapper   
+=============================== -->
+    <div id="main-wrapper">
+      <!-- Header
+  ============================ -->
+      <header id="header" class="sticky-top">
+        <!-- Navbar -->
+        <nav
+          class="primary-menu navbar navbar-expand-lg navbar-dark bg-dark border-bottom-0"
+        >
+          <div
+            class="container-fluid position-relative h-100 flex-lg-column ps-3 px-lg-3 pt-lg-3 pb-lg-2"
+          >
+            <!-- Logo -->
+            <a href="index.html" class="mb-lg-auto mt-lg-4">
+              <span
+                class="bg-dark-2 rounded-pill p-2 mb-lg-1 d-none d-lg-inline-block"
+              >
+                <img
+                  class="img-fluid rounded-pill d-block"
+                  src="images/profile.jpg"
+                  title="I'm Shaad"
+                  alt=""
+                  style="width: 175px"
+                />
+              </span>
+              <h1 class="text-5 text-white text-center mb-0 d-lg-block">
+                Mohammad Sayeed
+              </h1>
+            </a>
+            <!-- Logo End -->
 
-    <!--/ Section Services Star /-->
-    <section id="service" class="services-mf route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">Services</h3>
-              <p class="subtitle-a">Comprehensive AI Development Services</p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="ion-code-working"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">AI Software Development</h2>
-                <p class="s-description text-center">
-                  The applications of AI software development are diverse,
-                  ranging from chatbots and virtual assistants to recommendation
-                  systems, image recognition, and autonomous vehicles. The goal
-                  is to create systems that can understand, reason, and learn,
-                  ultimately enhancing efficiency, accuracy, and user
-                  experiences across various industries.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <!-- <span class="ico-circle"><i class="ion-code-working"></i></span> -->
-                <span
-                  class="ico-circle d-flex align-items-center justify-content-center"
-                >
-                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 24 24"><path fill="currentColor" d="M21 11V9h-2V7a2.006 2.006 0 0 0-2-2h-2V3h-2v2h-2V3H9v2H7a2.006 2.006 0 0 0-2 2v2H3v2h2v2H3v2h2v2a2.006 2.006 0 0 0 2 2h2v2h2v-2h2v2h2v-2h2a2.006 2.006 0 0 0 2-2v-2h2v-2h-2v-2Zm-4 6H7V7h10Z"/><path fill="currentColor" d="M11.361 8h-1.345l-2.01 8h1.027l.464-1.875h2.316L12.265 16h1.062Zm-1.729 5.324L10.65 8.95h.046l.983 4.374ZM14.244 8h1v8h-1z"/></svg>
-                </span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Design & Develop AI Algorithms</h2>
-                <p class="s-description text-center">
-                  Specialize in crafting innovative AI algorithms tailored to
-                  solve complex problems. From machine learning models to
-                  computer vision solutions, my end-to-end development approach
-                  ensures adaptability and optimal performance. Explore the
-                  versatility of my cross-industry expertise.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span
-                  class="ico-circle d-flex align-items-center justify-content-center"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="40"
-                    height="40"
-                    viewBox="0 0 14 14"
+            <div
+              id="header-nav"
+              class="collapse navbar-collapse w-100 my-lg-auto"
+            >
+              <ul class="navbar-nav text-lg-center my-lg-auto py-lg-3">
+                <li class="nav-item">
+                  <a class="nav-link smooth-scroll active" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link smooth-scroll" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link smooth-scroll" href="#services"
+                    >What I Do</a
                   >
-                    <g
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M.5.5v13h13" />
-                      <path d="M3.5 6.5L6 9l4-6l3.5 2.5" />
-                    </g>
-                  </svg>
-                </span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Data Analytics</h2>
-                <p class="s-description text-center">
-                  Capture the essence of transforming intricate datasets into
-                  actionable insights. From tailored analytics solutions to
-                  sophisticated statistical modeling, I specialize in presenting
-                  decision-makers with lucid, visually compelling data. Explore
-                  the dynamic potential of data analytics across various
-                  industries , departments and fields.
-                </p>
-              </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link smooth-scroll" href="#resume">Resume</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link smooth-scroll" href="#portfolio"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link smooth-scroll" href="#testimonial"
+                    >Testimonial</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link smooth-scroll" href="#contact">Contact</a>
+                </li>
+              </ul>
             </div>
+            <ul
+              class="social-icons social-icons-muted social-icons-sm mt-lg-auto ms-auto ms-lg-0 d-flex"
+            >
+              <li class="social-icons-facebook">
+                <a
+                  data-bs-toggle="tooltip"
+                  title="Facebook"
+                  href="http://www.facebook.com/"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="social-icons-twitter">
+                <a
+                  data-bs-toggle="tooltip"
+                  title="Twitter"
+                  href="http://www.twitter.com/"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="social-icons-linkedin">
+                <a
+                  data-bs-toggle="tooltip"
+                  title="Linkedin"
+                  data-bs-placement="top"
+                  href="https://www.linkedin.com/in/shaadqureshi"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="social-icons-github">
+                <a
+                  data-bs-toggle="tooltip"
+                  title="GitHub"
+                  data-bs-placement="top"
+                  href="https://github.com/shaadq"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+            </ul>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#header-nav"
+            >
+              <span></span><span></span><span></span>
+            </button>
           </div>
-          
-        </div>
-      </div>
-    </section>
-    <!--/ Section Services End /-->
+        </nav>
+        <!-- Navbar End -->
+      </header>
+      <!-- Header End -->
 
-    <div
-      class="section-counter paralax-mf bg-image"
-      style="background-image: url(img/counters-bg.jpg)"
-    >
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box">
-              <div class="counter-ico">
-                <span class="ico-circle"
-                  ><i class="ion-checkmark-round"></i
-                ></span>
-              </div>
-              <div class="counter-num">
-                <p class="counter">5</p>
-                <span class="counter-text">WORKS COMPLETED</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"
-                  ><i class="ion-ios-calendar-outline"></i
-                ></span>
-              </div>
-              <div class="counter-num">
-                <p class="counter">2</p>
-                <span class="counter-text">YEARS OF EXPERIENCE</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="ion-ios-people"></i></span>
-              </div>
-              <div class="counter-num">
-                <p class="counter">5</p>
-                <span class="counter-text">TOTAL CLIENTS</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
-              </div>
-              <div class="counter-num">
-                <p class="counter">2</p>
-                <span class="counter-text">AWARD WON</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- / Section Portfolio Star /-->
-    <!--/
-    <section id="work" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">Portfolio</h3>
-              <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="img/work-1.jpg" data-lightbox="gallery-mf">
-                <div class="work-img">
-                  <img src="img/work-1.jpg" alt="" class="img-fluid" />
-                </div>
-                <div class="work-content">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h2 class="w-title">Lorem impsum dolor</h2>
-                      <div class="w-more">
-                        <span class="w-ctegory">Web Design</span> /
-                        <span class="w-date">18 Sep. 2018</span>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="w-like">
-                        <span class="ion-ios-plus-outline"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="img/work-2.jpg" data-lightbox="gallery-mf">
-                <div class="work-img">
-                  <img src="img/work-2.jpg" alt="" class="img-fluid" />
-                </div>
-                <div class="work-content">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h2 class="w-title">Loreda Cuno Nere</h2>
-                      <div class="w-more">
-                        <span class="w-ctegory">Web Design</span> /
-                        <span class="w-date">18 Sep. 2018</span>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="w-like">
-                        <span class="ion-ios-plus-outline"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="img/work-3.jpg" data-lightbox="gallery-mf">
-                <div class="work-img">
-                  <img src="img/work-3.jpg" alt="" class="img-fluid" />
-                </div>
-                <div class="work-content">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h2 class="w-title">Mavrito Lana Dere</h2>
-                      <div class="w-more">
-                        <span class="w-ctegory">Web Design</span> /
-                        <span class="w-date">18 Sep. 2018</span>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="w-like">
-                        <span class="ion-ios-plus-outline"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="img/work-4.jpg" data-lightbox="gallery-mf">
-                <div class="work-img">
-                  <img src="img/work-4.jpg" alt="" class="img-fluid" />
-                </div>
-                <div class="work-content">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h2 class="w-title">Bindo Laro Cado</h2>
-                      <div class="w-more">
-                        <span class="w-ctegory">Web Design</span> /
-                        <span class="w-date">18 Sep. 2018</span>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="w-like">
-                        <span class="ion-ios-plus-outline"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="img/work-5.jpg" data-lightbox="gallery-mf">
-                <div class="work-img">
-                  <img src="img/work-5.jpg" alt="" class="img-fluid" />
-                </div>
-                <div class="work-content">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h2 class="w-title">Studio Lena Mado</h2>
-                      <div class="w-more">
-                        <span class="w-ctegory">Web Design</span> /
-                        <span class="w-date">18 Sep. 2018</span>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="w-like">
-                        <span class="ion-ios-plus-outline"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="img/work-6.jpg" data-lightbox="gallery-mf">
-                <div class="work-img">
-                  <img src="img/work-6.jpg" alt="" class="img-fluid" />
-                </div>
-                <div class="work-content">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h2 class="w-title">Studio Big Bang</h2>
-                      <div class="w-more">
-                        <span class="w-ctegory">Web Design</span> /
-                        <span class="w-date">18 Sep. 2017</span>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="w-like">
-                        <span class="ion-ios-plus-outline"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    /-->
-    <!--/ Section Portfolio End /-->
-
-    <!--/ Section Testimonials Star /-->
-    <div
-      class="testimonials paralax-mf bg-image"
-      style="background-image: url(img/overlay-bg.jpg)"
-    >
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div id="testimonial-mf" class="owl-carousel owl-theme">
-              <div class="testimonial-box">
-                <div class="author-test">
-                  <img
-                    src="img/testimonial-2.jpg"
-                    alt=""
-                    class="rounded-circle b-shadow-a"
-                  />
-                  <span class="author">Shrikrishna Nikam</span>
-                </div>
-                <div class="content-test">
-                  <p class="description lead">
-                    Demonstrated a deep understanding of AI principles, delivering high-quality solutions promptly. His problem-solving skills and attention to detail were evident throughout the project.
-                  </p>
-                  <span class="comit"><i class="fa fa-quote-right"></i></span>
-                </div>
-              </div>
-              <!--  -->
-              <div class="testimonial-box">
-                <div class="author-test">
-                  <img
-                    src="img/testimonial-2.jpg"
-                    alt=""
-                    class="rounded-circle b-shadow-a"
-                  />
-                  <span class="author">Aslam Siddiqui</span>
-                </div>
-                <div class="content-test">
-                  <p class="description lead">
-                    Appreciate Sayeed's commitment to excellence. His valuable contributions have elevated the overall quality of our AI initiatives.
-                  </p>
-                  <span class="comit"><i class="fa fa-quote-right"></i></span>
-                </div>
-              </div>
-              <!--  -->
-              <div class="testimonial-box">
-                <div class="author-test">
-                  <img
-                    src="img/testimonial-2.jpg"
-                    alt=""
-                    class="rounded-circle b-shadow-a"
-                  />
-                  <span class="author">Shrikant Bhosale</span>
-                </div>
-                <div class="content-test">
-                  <p class="description lead">
-                    I would like to commend our AI Enthusiast for their outstanding work on our recent project. Their expertise in artificial intelligence significantly contributed to the project's success.
-                  </p>
-                  <span class="comit"><i class="fa fa-quote-right"></i></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--/ Section Blog Star /-->
-    <section id="blog" class="blog-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">Projects & Blogs</h3>
-              <p class="subtitle-a">
-                Explore our latest blog posts for insightful articles, helpful tutorials, and updates on the latest trends in technology and innovation.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="https://github.com/Mds21/Train-Yolact-on-custom-dataset"
-                target="_blank"><img src="img/yolact-image.png" alt="" class="img-fluid"
-                /></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <!-- <div class="card-category">
-                    <h6 class="category">Travel</h6>
-                  </div> -->
-                </div>
-                <h3 class="card-title">
-                  <a href="https://github.com/Mds21/Train-Yolact-on-custom-dataset"target="_blank">Train Yolact on custom dataset</a>
-                </h3>
-                <p class="card-description">
-                  Training and testing yolact model for instance segementation using custom dataset.
-                </p>
-              </div>
-              <!-- <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img
-                      src="img/testimonial-2.jpg"
-                      alt=""
-                      class="avatar rounded-circle"
-                    />
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="ion-ios-clock-outline"></span> 10 min
-                </div>
-              </div> -->
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="https://github.com/Mds21/Train-Yolov7-for-object-detection-on-custom-dataset"
-                target="_blank"><img src="img/yolov7-image.png" alt="" class="img-fluid"
-                /></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <!-- <div class="card-category">
-                    <h6 class="category">Web Design</h6>
-                  </div> -->
-                </div>
-                <h3 class="card-title">
-                  <a href="https://github.com/Mds21/Train-Yolov7-for-object-detection-on-custom-dataset" target="_blank">Train Yolov7 on custom dataset for object detection</a>
-                </h3>
-                <p class="card-description">
-                  Custom dataset training using yolov7 model.
-                </p>
-              </div>
-              <!-- <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img
-                      src="img/testimonial-2.jpg"
-                      alt=""
-                      class="avatar rounded-circle"
-                    />
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="ion-ios-clock-outline"></span> 10 min
-                </div>
-              </div> -->
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="https://github.com/Mds21/IPL-data-analysis"
-                target="_blank"><img src="img/ipl-image.png" alt="" class="img-fluid"
-                /></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <!-- <div class="card-category">
-                    <h6 class="category">Web Design</h6>
-                  </div> -->
-                </div>
-                <h3 class="card-title">
-                  <a href="https://github.com/Mds21/IPL-data-analysis" target="_blank">IPL data analysis </a>
-                </h3>
-                <p class="card-description">
-                  Explore team and player performance, match
-                  outcomes, and trends. Visualize insights for informed decision-making.
-                </p>
-              </div>
-              <!-- <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img
-                      src="img/testimonial-2.jpg"
-                      alt=""
-                      class="avatar rounded-circle"
-                    />
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div> -->
-                <!-- <div class="post-date">
-                  <span class="ion-ios-clock-outline"></span> 10 min
-                </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--/ Section Blog End /-->
-
-    <!--/ Section Contact-Footer Star /-->
-    <section
-      class="paralax-mf footer-paralax bg-image sect-mt4 route"
-      style="background-image: url(img/overlay-bg.jpg)"
-    >
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
+      <!-- Content
+  ============================================= -->
+      <div id="content" role="main">
+        <!-- Intro
+    ============================================= -->
+        <section id="home">
+          <div class="hero-wrap">
+            <div class="hero-mask opacity-8 bg-dark"></div>
+            <div
+              class="hero-bg parallax"
+              style="background-image: url('images/intro-bg3.jpg')"
+            ></div>
+            <div class="hero-content section d-flex min-vh-100">
+              <div class="container my-auto">
                 <div class="row">
-                  <!-- send mesg -->
-                  <div class="col-md-6"  style="margin: 0 auto">
-                    <div class="title-box-2 pt-4 pt-md-0" style="text-align:center">
-                      <h5 class="title-left title-left-custom">Get in Touch</h5>
+                  <div class="col-12 text-center">
+                    <div class="typed-strings">
+                      <p>I'm Mohammad Sayeed</p>
+                      <p>I'm an AI Developer.</p>
+                      <p>I'm an AI  Enthusiast.</p>
                     </div>
-                    <div class="more-info">
-                      <p class="lead">
-                        Feel free to get in touch to discuss how my expertise in
-                        AI development and data analytics can elevate your
-                        projects. Whether you're exploring innovative solutions,
-                        need assistance with algorithm design, or seek insights
-                        from data analytics, I'm here to collaborate and bring
-                        value to your initiatives. Let's transform ideas into
-                        reality , contact me to start a conversation.
-                      </p>
-                      <ul class="list-ico">
-                        <li>
-                          <span class="ion-ios-location"></span> Mumbai,India
-                        </li>
-                        <li>
-                          <span class="ion-ios-telephone"></span> +919565778060
-                        </li>
-                        <li>
-                          <span class="ion-email"></span>
-                          khansayeed25519@gmail.com
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-                        <li>
-                          <a href="https://wa.me/+919565778060"
-                          target="_blank"><span class="ico-circle"
-                              ><i class="ion-social-whatsapp"></i></span
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="https://www.instagram.com/sayeed.mohd_"
-                          target="_blank"><span class="ico-circle"
-                              ><i class="ion-social-instagram"></i></span
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="https://www.github.com/Mds21"
-                          target="_blank"><span class="ico-circle"
-                              ><i class="ion-social-github"></i></span
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="https://www.linkedin.com/in/mohammad-sayeed-31a6a1176"
-                          target="_blank"><span class="ico-circle"
-                              ><i class="ion-social-linkedin"></i></span
-                          ></a>
-                        </li>
-                      </ul>
-                    </div>
+                    <p class="text-7 fw-500 text-white mb-2 mb-md-3">Hello,</p>
+                    <h2 class="text-16 fw-600 text-white mb-2 mb-md-3">
+                      <span class="typed"></span>
+                    </h2>
+                    <p class="text-5 text-light mb-4">
+                      based in Mumbai, India.
+                    </p>
+                    <a
+                      href="#contact"
+                      class="btn btn-outline-primary rounded-pill shadow-none smooth-scroll mt-2"
+                      >Hire Me</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <a
+                href="#about"
+                class="scroll-down-arrow text-white smooth-scroll"
+                ><span class="animated"><i class="fa fa-chevron-down"></i></span
+              ></a>
+            </div>
+          </div>
+        </section>
+        <!-- Intro end -->
+
+        <!-- About
+    ============================================= -->
+        <section id="about" class="section bg-dark-1">
+          <div class="container px-lg-5">
+            <!-- Heading -->
+            <div class="position-relative d-flex text-center mb-5">
+              <h2
+                class="text-24 text-muted opacity-1 text-uppercase fw-600 w-100 mb-0"
+              >
+                About Me
+              </h2>
+              <p
+                class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0"
+              >
+                Know Me More<span
+                  class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"
+                ></span>
+              </p>
+            </div>
+            <!-- Heading end-->
+
+            <div class="row gy-5">
+              <div class="col-lg-7 col-xl-8 text-center text-lg-start">
+                <h2 class="text-7 text-white fw-600 mb-3">
+                  I'm
+                  <span class="text-primary">Mohammad Sayeed,</span> an AI
+                  Developer
+                </h2>
+                <p class="text-white-50">
+                  I help you build brand for your business at an affordable
+                  price. Thousands of clients have procured exceptional results
+                  while working with our dedicated team. when an unknown printer
+                  took a galley of type and scrambled it to make a type specimen
+                  book.
+                </p>
+                <p class="text-white-50">
+                  Delivering work within time and budget which meets client’s
+                  requirements is our moto. Lorem Ipsum has been the industry's
+                  standard dummy text ever when an unknown printer took a
+                  galley.
+                </p>
+              </div>
+              <div class="col-lg-5 col-xl-4">
+                <div class="ps-lg-4">
+                  <ul class="list-style-2 list-style-light text-light">
+                    <li>
+                      <span class="fw-600 me-2">Name:</span>Mohammad Sayeed
+                    </li>
+                    <li>
+                      <span class="fw-600 me-2">Email:</span
+                      ><a href="mailto:shaadqureshi1709@gmail.com"
+                        >khansayeed25519@gmail.com</a
+                      >
+                    </li>
+                    <li><span class="fw-600 me-2">Age:</span>24</li>
+                    <li class="border-0">
+                      <span class="fw-600 me-2">From:</span>Mumbai, India
+                    </li>
+                  </ul>
+                  <a
+                    href="#"
+                    onclick="downloadPDF(event)"
+                    class="btn btn-primary rounded-pill"
+                    >Download Resume</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="brands-grid separator-border separator-border-light mt-5"
+            >
+              <div class="row">
+                <div class="col-6 col-md-3">
+                  <div class="featured-box text-center">
+                    <h4 class="text-12 text-white-50 mb-0">
+                      <span class="counter" data-from="0" data-to="2">2</span>+
+                    </h4>
+                    <p class="text-light mb-0">Years Experience</p>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="featured-box text-center">
+                    <h4 class="text-12 text-white-50 mb-0">
+                      <span class="counter" data-from="0" data-to="4">4</span
+                      >+
+                    </h4>
+                    <p class="text-light mb-0">Happy Clients</p>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="featured-box text-center">
+                    <h4 class="text-12 text-white-50 mb-0">
+                      <span class="counter" data-from="0" data-to="4">4</span
+                      >+
+                    </h4>
+                    <p class="text-light mb-0">Projects Done</p>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="featured-box text-center">
+                    <h4 class="text-12 text-white-50 mb-0">
+                      <span class="counter" data-from="0" data-to="0">0</span>
+                    </h4>
+                    <p class="text-light mb-0">Get Awards</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="copyright-box">
-                <p class="copyright">
-                  &copy; Designed by <strong>Mohammad Sayeed</strong>
-                </p>
+        </section>
+        <!-- About end -->
+
+        <!-- Services
+    ============================================= -->
+        <section id="services" class="section bg-dark-2">
+          <div class="container px-lg-5">
+            <!-- Heading -->
+            <div class="position-relative d-flex text-center mb-5">
+              <h2
+                class="text-24 text-white-50 opacity-1 text-uppercase fw-600 w-100 mb-0"
+              >
+                Services
+              </h2>
+              <p
+                class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0"
+              >
+                What I Do?<span
+                  class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"
+                ></span>
+              </p>
+            </div>
+            <!-- Heading end-->
+
+            <div class="row">
+              <div class="col-lg-11 mx-auto">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="featured-box style-3 mb-5">
+                      <div
+                        class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"
+                      >
+                        <i class="fas fa-code"></i>
+                      </div>
+                      <h3 class="text-white">AI software development</h3>
+                      <p class="text-white-50 mb-0">
+                          AI software development spans chatbots, virtual assistants, recommendation systems, image recognition, image processing, and autonomous vehicles. Image processing enhances AI's ability to detect objects, segment images, and extract features, boosting efficiency, accuracy, and user experiences across industries.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="featured-box style-3 mb-5">
+                      <div
+                        class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"
+                      >
+                        <i class="fas fa-robot"></i>
+                      </div>
+                      <h3 class="text-white">Design & Develop AI algorithms</h3>
+                      <p class="text-white-50 mb-0">
+                        Specialize in crafting innovative AI algorithms tailored to solve complex problems. From machine learning models to computer vision solutions, my end-to-end development approach ensures adaptability and optimal performance. Explore the versatility of my cross-industry expertise.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="featured-box style-3 mb-5">
+                      <div
+                        class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"
+                      >
+                        <i class="fas fa-chart-simple"></i>
+                      </div>
+                      <h3 class="text-white">Data analytics</h3>
+                      <p class="text-white-50 mb-0">
+                        Capture the essence of transforming intricate datasets into actionable insights. From tailored analytics solutions to sophisticated statistical modeling, I specialize in presenting decision-makers with lucid, visually compelling data. Explore the dynamic potential of data analytics across various industries , departments and fields.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="featured-box style-3 mb-5">
+                      <div
+                        class="featured-box-icon text-primary bg-dark-1 shadow-sm rounded"
+                      >
+                        <i class="fas fa-gears"></i>
+                      </div>
+                      <h3 class="text-white">Automation</h3>
+                      <p class="text-white-50 mb-0">
+                        Write scripts to automate repetitive tasks such as file manipulation, data scraping, and report generation.Use libraries like beautifulSoup & Selenium for web scraping and OpenCV for image processing automation.Develop bots for social media management, customer service, and administrative tasks.
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Services end -->
+
+        <!-- Resume
+    ============================================= -->
+        <section id="resume" class="section bg-dark-1">
+          <div class="container px-lg-5">
+            <!-- Heading -->
+            <div class="position-relative d-flex text-center mb-5">
+              <h2
+                class="text-24 text-muted opacity-1 text-uppercase fw-600 w-100 mb-0"
+              >
+                Summary
+              </h2>
+              <p
+                class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0"
+              >
+                Resume<span
+                  class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"
+                ></span>
+              </p>
+            </div>
+            <!-- Heading end-->
+
+            <div class="row gx-5">
+              <!-- My Education -->
+              <div class="col-md-6">
+                <h2 class="text-6 text-white fw-600 mb-4">My Education</h2>
+                <div class="bg-dark rounded p-4 mb-4">
+                  <p class="badge bg-danger text-2 fw-400">2018 - 2022</p>
+                  <h3 class="text-5 text-white">
+                    Bachelor of Technology - Computer Science
+                  </h3>
+                  <p class="text-primary">Dr. Babasaheb Ambedkar Technological University</p>
+                  <p class="text-white-50 mb-0">
+                    IEEE-RAIT Summer Internship - Summer Intern April 2021
+                    <br />
+                    June 2021<br />
+                    Gym Management System: Led the creation of a gym management
+                    system for owners. Efficiently recorded client and payment
+                    data, with seamless features for adding, updating, and
+                    removing records. Utilized Python and MySQL.
+                  </p>
+                </div>
                 
               </div>
+
+              <!-- My Experience -->
+              <div class="col-md-6">
+                <h2 class="text-6 text-white fw-600 mb-4">My Experience</h2>
+                <div class="bg-dark rounded p-4 mb-4">
+                  <p class="badge bg-danger text-2 fw-400">
+                    Nov 2023 - Present
+                  </p>
+                  <h3 class="text-5 text-white">AI Developer</h3>
+                  <p class="text-primary">Intelegain Technologies Pvt. Ltd.</p>
+                  <!-- <p class="text-white-50 mb-0">
+                    Lisque persius interesset his et, in quot quidam persequeris
+                    vim, ad mea essent possim iriure.
+                  </p> -->
+
+                  <ul class="text-white-50 mb-0">
+                    <li>
+                      Boozno Venue Management System: Used Sync-fusion React
+                      Components like Scheduler, Data Table with sorting,
+                      relocating columns etc, Toasters and many more to enhance
+                      the user experience in the admin portal and venue portal.
+                    </li>
+                    <li>
+                      Texas Choral Riser Rental: Led the development of Texas
+                      Choral Riser Rental's dynamic responsive website with
+                      ReactJS, showcasing modern web development skills and
+                      effective teamwork.
+                    </li>
+                    <li>
+                      Saber Giffin E-commerce Web Application: Improved B2B
+                      e-commerce UI for Saber Giffin Traffiks L.L.C. by updating
+                      addresses and enhancing features with HTML, CSS, jQuery,
+                      JS, and Bootstrap5.
+                    </li>
+                    <li>
+                      Enterprise Resource Planning Intelegain Website: Created
+                      an ERP page at Intelegain Technologies with PHP,
+                      WordPress, HTML, CSS, JavaScript, jQuery, and Bootstrap,
+                      showcasing web development prowess.
+                    </li>
+                  </ul>
+                </div>
+                <div class="bg-dark rounded p-4 mb-4">
+                  <p class="badge bg-danger text-2 fw-400">
+                    May 2022 - Oct 2023
+                  </p>
+                  <h3 class="text-5 text-white">Jr. AI Developer</h3>
+                  <p class="text-primary">CheckExplore Technologies</p>
+                  <!-- <p class="text-white-50 mb-0">Projects: • • •</p> -->
+
+                  <ul class="text-white-50 mb-0">
+                    <li>
+                      Aditya Birla Sun Life Insurance – Admin Panel: Led Aditya
+                      Birla Capital Admin Panel development, enabling order and
+                      payment oversight, backend user data management, and UI
+                      enhancements. Key involvement in JavaScript coding.
+                      Technologies: MySQL, NodeJS, ReactJS.
+                    </li>
+                    <li>
+                      PolicyEra Web Application: Enhanced customer policy data
+                      management in the Policy Era Admin Panel by implementing
+                      edit, add, and delete functions, boosting database
+                      efficiency.
+                    </li>
+                    <li>
+                      OMA Women’s Hospital Website: Contributed to the
+                      development of the OMA Women's Hospital website using
+                      ReactJS, assisting in the creation of dynamic and engaging
+                      web content.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- My Skills -->
+            <h2 class="text-6 text-white fw-600 mt-4 mb-4">My Skills</h2>
+            <!-- <div class="row gx-5">
+              <div class="col-md-6">
+                <p class="text-light fw-500 text-start mb-2">
+                  Web Design <span class="float-end">65%</span>
+                </p>
+                <div class="progress progress-sm bg-dark mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 65%"
+                    aria-valuenow="65"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p class="text-light fw-500 text-start mb-2">
+                  HTML/CSS <span class="float-end">95%</span>
+                </p>
+                <div class="progress progress-sm bg-dark mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 95%"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p class="text-light fw-500 text-start mb-2">
+                  JavaScript <span class="float-end">80%</span>
+                </p>
+                <div class="progress progress-sm bg-dark mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <p class="text-light fw-500 text-start mb-2">
+                  React JS <span class="float-end">70%</span>
+                </p>
+                <div class="progress progress-sm bg-dark mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 70%"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p class="text-light fw-500 text-start mb-2">
+                  Angular Js <span class="float-end">60%</span>
+                </p>
+                <div class="progress progress-sm bg-dark mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 60%"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p class="text-light fw-500 text-start mb-2">
+                  Bootstrap <span class="float-end">99%</span>
+                </p>
+                <div class="progress progress-sm bg-dark mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 99%"
+                    aria-valuenow="99"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div> -->
+            <h5 class="text-primary fw-light">Languages</h5>
+            <div class="row mb-4">
+             
+              <div
+                class="col-md-2 col-4 d-flex align-items-center justify-content-center"
+              >
+                <img src="images/svg/python.svg" class="w-100" alt="" />
+              </div>
+              <div
+                class="col-md-2 col-4 d-flex align-items-center justify-content-center"
+              >
+                <img src="images/svg/java.svg" class="w-100 mb-2" alt="" />
+              </div>
+              <div
+              class="col-md-2 col-4 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="images/svg/mysql.svg"
+                class="w-100 mb-2"
+                alt=""
+              />
+            </div>
+            </div>
+            <h5 class="text-primary fw-light">Libraries and Modules</h5>
+            <div class="row mb-4">
+              <div
+                class="col-md-2 col-4 d-flex align-items-center justify-content-center"
+              >
+                <img src="images/svg/opencv.svg" class="w-100" alt="" />
+              </div>
+              <div
+                class="col-md-2 col-4 d-flex align-items-center justify-content-center"
+              >
+                <img src="images/svg/pytorch.svg" class="w-100" alt="" />
+              </div>
+              <div
+                class="col-md-2 col-4 d-flex align-items-center justify-content-center"
+              >
+                <img src="images/svg/tensorflow.svg" class="w-100" alt="" />
+              </div>
+              <div
+                class="col-md-2 col-4 d-flex align-items-center justify-content-center"
+              >
+                <img src="images/svg/numpy.svg" class="w-100" alt="" />
+              </div>
+              <div
+                class="col-md-2 col-4 d-flex align-items-center justify-content-center"
+              >
+                <img src="images/svg/pandas.svg" class="w-100" alt="" />
+              </div>
+              <div
+                class="col-md-2 col-4 d-flex align-items-center justify-content-center"
+              >
+                <img src="images/svg/scikit-learn.svg" class="w-100" alt="" />
+              </div>
+              <div
+                class="col-md-2 col-4 d-flex align-items-center justify-content-center"
+              >
+                <img src="images/svg/keras.svg" class="w-100" alt="" />
+              </div>
+              <div
+                class="col-md-2 col-4 d-flex align-items-center justify-content-center"
+              >
+                <img src="images/svg/matplotlib.svg" class="w-100" alt="" />
+              </div>
+            </div>
+            <h5 class="text-primary fw-light">Application Softwares</h5>
+            <div class="row mb-4">
+              <div
+                class="col-md-2 col-4 d-flex align-items-center justify-content-center"
+              >
+                <img src="images/svg/git.svg" class="w-100" alt="" />
+              </div>
+              <div
+                class="col-md-2 col-4 d-flex align-items-center justify-content-center"
+              >
+                <img src="images/svg/docker.svg" class="w-100" alt="" />
+              </div>
+              <div
+                class="col-md-2 col-4 d-flex align-items-center justify-content-center"
+              >
+                <img
+                  src="images/svg/visualstudiocode.svg"
+                  class="w-100"
+                  alt=""
+                />
+              </div>
+              <div
+                class="col-md-2 col-4 d-flex align-items-center justify-content-center"
+              >
+                <img src="images/svg/powerbi.svg" class="w-100 mb-2" alt="" />
+              </div>
+            </div>
+            <h5 class="text-primary fw-light">Others</h5>
+            <div class="row mb-4">
+              <div
+                class="col-md-2 col-4 d-flex align-items-center justify-content-center"
+              >
+                <img src="images/svg/microsoft.svg" class="w-100" alt="" />
+              </div>
+              <div
+                class="col-md-2 col-4 d-flex align-items-center justify-content-center"
+              >
+                <img src="images/svg/microsoft_azure.svg" class="w-100" alt="" />
+              </div>
+              
+            </div>
+            
+            <div class="text-center mt-5">
+              <a
+                href="#"
+                class="btn btn-outline-secondary rounded-pill shadow-none"
+                onclick="downloadPDF(event)"
+                >Download Resume
+                <span class="ms-1"><i class="fas fa-download"></i></span
+              ></a>
             </div>
           </div>
+        </section>
+        <!-- Resume end -->
+
+        <!-- Portfolio
+    ============================================= -->
+        <section id="portfolio" class="section bg-dark-2">
+          <div class="container px-lg-5">
+            <!-- Heading -->
+            <div class="position-relative d-flex text-center mb-5">
+              <h2
+                class="text-24 text-white-50 opacity-1 text-uppercase fw-600 w-100 mb-0"
+              >
+                Portfolio
+              </h2>
+              <p
+                class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0"
+              >
+                My Work<span
+                  class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"
+                ></span>
+              </p>
+            </div>
+            <!-- Heading end-->
+
+            <!-- Filter Menu -->
+            <ul
+              class="portfolio-menu nav nav-tabs nav-light justify-content-center border-bottom-0 mb-5"
+            >
+              <li class="nav-item">
+                <a data-filter="*" class="nav-link active" href="">All</a>
+              </li>
+              <li class="nav-item">
+                <a data-filter=".design" href="" class="nav-link">Design</a>
+              </li>
+              <li class="nav-item">
+                <a data-filter=".brand" href="" class="nav-link">Brand</a>
+              </li>
+              <li class="nav-item">
+                <a data-filter=".photos" href="" class="nav-link">Photos</a>
+              </li>
+            </ul>
+            <!-- Filter Menu end -->
+            <div class="portfolio popup-ajax-gallery">
+              <div class="row portfolio-filter g-4">
+                <div class="col-sm-6 col-lg-4 brand">
+                  <div class="portfolio-box rounded">
+                    <div class="portfolio-img rounded">
+                      <img
+                        class="img-fluid d-block"
+                        src="images/projects/project-1.jpg"
+                        alt=""
+                      />
+                      <div class="portfolio-overlay">
+                        <a
+                          class="popup-ajax stretched-link"
+                          href="ajax/portfolio-ajax-project-dark-1.html"
+                        ></a>
+                        <div class="portfolio-overlay-details">
+                          <h5 class="text-white fw-400">Project Title</h5>
+                          <span class="text-light">Category</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 design">
+                  <div class="portfolio-box rounded">
+                    <div class="portfolio-img rounded">
+                      <img
+                        class="img-fluid d-block"
+                        src="images/projects/project-2.jpg"
+                        alt=""
+                      />
+                      <div class="portfolio-overlay">
+                        <a
+                          class="popup-ajax stretched-link"
+                          href="ajax/portfolio-ajax-project-dark-2.html"
+                        ></a>
+                        <div class="portfolio-overlay-details">
+                          <h5 class="text-white fw-400">Project Title</h5>
+                          <span class="text-light">Category</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 artwork photos">
+                  <div class="portfolio-box rounded">
+                    <div class="portfolio-img rounded">
+                      <img
+                        class="img-fluid d-block"
+                        src="images/projects/project-3.jpg"
+                        alt=""
+                      />
+                      <div class="portfolio-overlay">
+                        <a
+                          class="popup-ajax stretched-link"
+                          href="ajax/portfolio-ajax-project-dark-3.html"
+                        ></a>
+                        <div class="portfolio-overlay-details">
+                          <h5 class="text-white fw-400">Project Title</h5>
+                          <span class="text-light">Category</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 artwork brand photos">
+                  <div class="portfolio-box rounded">
+                    <div class="portfolio-img rounded">
+                      <img
+                        class="img-fluid d-block"
+                        src="images/projects/project-4.jpg"
+                        alt=""
+                      />
+                      <div class="portfolio-overlay">
+                        <a
+                          class="popup-ajax stretched-link"
+                          href="ajax/portfolio-ajax-project-dark-4.html"
+                        ></a>
+                        <div class="portfolio-overlay-details">
+                          <h5 class="text-white fw-400">Project Title</h5>
+                          <span class="text-light">Category</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 design">
+                  <div class="portfolio-box rounded">
+                    <div class="portfolio-img rounded">
+                      <img
+                        class="img-fluid d-block"
+                        src="images/projects/project-5.jpg"
+                        alt=""
+                      />
+                      <div class="portfolio-overlay">
+                        <a
+                          class="popup-ajax stretched-link"
+                          href="ajax/portfolio-ajax-project-dark-5.html"
+                        ></a>
+                        <div class="portfolio-overlay-details">
+                          <h5 class="text-white fw-400">Project Title</h5>
+                          <span class="text-light">Category</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 brand">
+                  <div class="portfolio-box rounded">
+                    <div class="portfolio-img rounded">
+                      <img
+                        class="img-fluid d-block"
+                        src="images/projects/project-6.jpg"
+                        alt=""
+                      />
+                      <div class="portfolio-overlay">
+                        <a
+                          class="popup-ajax stretched-link"
+                          href="ajax/portfolio-ajax-project-dark-6.html"
+                        ></a>
+                        <div class="portfolio-overlay-details">
+                          <h5 class="text-white fw-400">Project Title</h5>
+                          <span class="text-light">Category</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 design photos">
+                  <div class="portfolio-box rounded">
+                    <div class="portfolio-img rounded">
+                      <img
+                        class="img-fluid d-block"
+                        src="images/projects/project-7.jpg"
+                        alt=""
+                      />
+                      <div class="portfolio-overlay">
+                        <a
+                          class="popup-ajax stretched-link"
+                          href="ajax/portfolio-ajax-project-dark-7.html"
+                        ></a>
+                        <div class="portfolio-overlay-details">
+                          <h5 class="text-white fw-400">Project Title</h5>
+                          <span class="text-light">Category</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Portfolio end -->
+
+        <!-- Testimonial
+    ============================================= -->
+        <section id="testimonial" class="section bg-dark-1">
+          <div class="container px-lg-5">
+            <!-- Heading -->
+            <div class="position-relative d-flex text-center mb-5">
+              <h2
+                class="text-24 text-muted opacity-1 text-uppercase fw-600 w-100 mb-0"
+              >
+                Testimonial
+              </h2>
+              <p
+                class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0"
+              >
+                Client Speak<span
+                  class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"
+                ></span>
+              </p>
+            </div>
+            <!-- Heading end-->
+
+            <div
+              class="owl-carousel owl-light owl-theme"
+              data-loop="true"
+              data-nav="false"
+              data-autoplay="false"
+              data-margin="25"
+              data-stagepadding="0"
+              data-slideby="1"
+              data-items-xs="1"
+              data-items-sm="1"
+              data-items-md="1"
+              data-items-lg="2"
+            >
+              <div class="item">
+                <div class="bg-dark rounded p-5">
+                  <div class="d-flex align-items-center mt-auto mb-4">
+                    <img
+                      class="img-fluid rounded-circle d-inline-block w-auto"
+                      src="images/testimonial/client-sm-3.jpg"
+                      alt=""
+                    />
+                    <p class="ms-3 mb-0">
+                      <strong class="d-block text-white fw-600"
+                        >Dennis Jacques</strong
+                      >
+                      <span class="text-white-50 fw-500">User from USA</span>
+                    </p>
+                  </div>
+                  <p class="text-light mb-4">
+                    “Only trying it out since a few days. But up to now
+                    excellent. Seems to work flawlessly. priced simply dummy
+                    text of the printing and typesetting industry.”
+                  </p>
+                  <span class="text-2">
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="bg-dark rounded p-5">
+                  <div class="d-flex align-items-center mt-auto mb-4">
+                    <img
+                      class="img-fluid rounded-circle d-inline-block w-auto"
+                      src="images/testimonial/client-sm-1.jpg"
+                      alt=""
+                    />
+                    <p class="ms-3 mb-0">
+                      <strong class="d-block text-white fw-600"
+                        >Jay Shah</strong
+                      >
+                      <span class="text-white-50 fw-500"
+                        >Founder at Icomatic Pvt Ltd</span
+                      >
+                    </p>
+                  </div>
+                  <p class="text-light mb-4">
+                    "Easy to use, reasonably priced simply dummy text of the
+                    printing and typesetting industry. Quidam lisque persius
+                    interesset his et, in quot quidam possim iriure.”
+                  </p>
+                  <span class="text-2">
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="bg-dark rounded p-5">
+                  <div class="d-flex align-items-center mt-auto mb-4">
+                    <img
+                      class="img-fluid rounded-circle d-inline-block w-auto"
+                      src="images/testimonial/client-sm-2.jpg"
+                      alt=""
+                    />
+                    <p class="ms-3 mb-0">
+                      <strong class="d-block text-white fw-600"
+                        >Patrick Cary</strong
+                      >
+                      <span class="text-white-50 fw-500"
+                        >Freelancer from USA</span
+                      >
+                    </p>
+                  </div>
+                  <p class="text-light mb-4">
+                    “I am happy Working with printing and typesetting industry.
+                    Quidam lisque persius interesset his et, in quot quidam
+                    persequeris essent possim iriure.”
+                  </p>
+                  <span class="text-2">
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="bg-dark rounded p-5">
+                  <div class="d-flex align-items-center mt-auto mb-4">
+                    <img
+                      class="img-fluid rounded-circle d-inline-block w-auto"
+                      src="images/testimonial/client-sm-4.jpg"
+                      alt=""
+                    />
+                    <p class="ms-3 mb-0">
+                      <strong class="d-block text-white fw-600"
+                        >Chris Tom</strong
+                      >
+                      <span class="text-white-50 fw-500">User from UK</span>
+                    </p>
+                  </div>
+                  <p class="text-light mb-4">
+                    “I have used them twice now. Good rates, very efficient
+                    service and priced simply dummy text of the printing and
+                    typesetting industry quidam interesset his et. Excellent.”
+                  </p>
+                  <span class="text-2">
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Testimonial end -->
+
+        <!-- Contact Me
+    ============================================= -->
+        <section id="contact" class="section bg-dark-2">
+          <div class="container px-lg-5">
+            <!-- Heading -->
+            <div class="position-relative d-flex text-center mb-5">
+              <h2
+                class="text-24 text-white-50 opacity-1 text-uppercase fw-600 w-100 mb-0"
+              >
+                Contact
+              </h2>
+              <p
+                class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0"
+              >
+                Get in Touch<span
+                  class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"
+                ></span>
+              </p>
+            </div>
+            <!-- Heading end-->
+            <div class="row gy-5">
+              <div
+                class="col-md-4 col-xl-3 order-1 order-md-0 text-center text-md-start"
+              >
+                <h2 class="mb-3 text-5 text-white text-uppercase">Address</h2>
+                <p class="text-3 text-light mb-4">
+                  <!-- 4th Floor, Plot No.22,<br />
+                  145 Murphy Canyon Rd.<br /> -->
+                  Thane - 400604 <br />
+                  Maharashtra, India
+                </p>
+                <p class="text-3 text-light mb-1">
+                  <span class="text-primary text-4 me-2"
+                    ><i class="fas fa-phone"></i></span
+                  >+91 (9565) 778 060
+                </p>
+                <!-- <p class="text-3 text-light mb-1">
+                  <span class="text-primary text-4 me-2"
+                    ><i class="fas fa-fax"></i></span
+                  >(060) 555 545 555
+                </p> -->
+                <p class="text-3 text-light mb-4">
+                  <span class="text-primary text-4 me-2"
+                    ><i class="fas fa-envelope"></i></span
+                  >khansayeed25519@gmail.com
+                </p>
+                <h2 class="mb-3 text-5 text-white text-uppercase">Follow Me</h2>
+                <ul
+                  class="social-icons social-icons-muted justify-content-center justify-content-md-start"
+                >
+                  <li class="social-icons-linkedin">
+                    <a
+                      data-bs-toggle="tooltip"
+                      href="https://www.linkedin.com/in/mohammad-sayeed-31a6a1176"
+                      target="_blank"
+                      title="LinkedIn"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                  </li>
+                  <li class="social-icons-twitter">
+                    <a
+                      data-bs-toggle="tooltip"
+                      href="https://x.com/sayeedbyte/"
+                      target="_blank"
+                      title="X"
+                      ><i class="fab fa-x-twitter"></i
+                    ></a>
+                  </li>
+                  <li class="social-icons-facebook">
+                    <a
+                      data-bs-toggle="tooltip"
+                      href="http://www.instagram.com/sayeed.mohd_/"
+                      target="_blank"
+                      title="Instagram"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li class="social-icons-github">
+                    <a
+                      data-bs-toggle="tooltip"
+                      href="https://github.com/Mds21"
+                      target="_blank"
+                      title="GitHub"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-8 col-xl-9 order-0 order-md-1">
+                <h2
+                  class="mb-3 text-5 text-white text-uppercase text-center text-md-start"
+                >
+                  Send us a note
+                </h2>
+                <form
+                  id="contact-form"
+                  class="form-dark"
+                  action="php/mail.php"
+                  method="post"
+                >
+                  <div class="row g-4">
+                    <div class="col-xl-6">
+                      <input
+                        name="name"
+                        type="text"
+                        class="form-control"
+                        required
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="col-xl-6">
+                      <input
+                        name="email"
+                        type="email"
+                        class="form-control"
+                        required
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div class="col">
+                      <textarea
+                        name="form-message"
+                        class="form-control"
+                        rows="5"
+                        required
+                        placeholder="Message"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <p class="text-center mt-4 mb-0">
+                    <button
+                      id="submit-btn"
+                      class="btn btn-primary rounded-pill d-inline-flex"
+                      type="submit"
+                    >
+                      Send Message
+                    </button>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Contact Me end -->
+      </div>
+      <!-- Content end -->
+
+      <!-- Footer
+  ============================================= -->
+  <footer id="footer" class="section footer-dark bg-dark-1 px-0 py-4">
+    <div class="container">
+      <p class="mb-3 mb-lg-0 text-center">
+        Copyright © 2024 <span class="text-primary">Mohammad Sayeed</span>. All Rights
+        Reserved.
+      </p>
+    </div>
+  </footer>
+      <!-- Footer end -->
+    </div>
+    <!-- Document Wrapper end -->
+
+    <!-- Back to Top
+============================================= -->
+    <a
+      id="back-to-top"
+      class="rounded-circle"
+      data-bs-toggle="tooltip"
+      title="Back to Top"
+      href="javascript:void(0)"
+      ><i class="fa fa-chevron-up"></i
+    ></a>
+
+    <!-- Terms & Policy Modal
+================================== -->
+    <div id="terms-policy" class="modal fade" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content bg-dark-2 text-light">
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title text-white">Terms & Policy</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4">
+            <p>
+              Simply dummy text of the printing and typesetting industry. Lorem
+              Ipsum has been the industry's standard dummy text ever since the
+              1500s, when an unknown printer took a galley of type and scrambled
+              it to make a type specimen book. It has survived not only five
+              centuries, but also the leap into electronic typesetting,
+              remaining essentially unchanged.
+            </p>
+            <h3 class="text-white mb-3 mt-4 mt-4">Terms of Use</h3>
+            <p>
+              It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. Simply
+              dummy text of the printing and typesetting industry.
+            </p>
+            <h5 class="text-white text-4 mt-4">
+              Part I – Information Simone collects and controls
+            </h5>
+            <p>
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.
+            </p>
+            <h5 class="text-white text-4 mt-4">
+              Part II – Information that Simone processes on your behalf
+            </h5>
+            <p>
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.
+            </p>
+            <h5 class="text-white text-4 mt-4">Part III – General</h5>
+            <p>
+              It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. Lorem
+              Ipsum has been the industry's standard dummy text ever since the
+              1500s, when an unknown printer took a galley of type and scrambled
+              it to make a type specimen book.
+            </p>
+            <h3 class="text-white mb-3 mt-4">Privacy Policy</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <ol class="lh-lg">
+              <li>
+                Lisque persius interesset his et, in quot quidam persequeris
+                vim, ad mea essent possim iriure.
+              </li>
+              <li>
+                Quidam lisque persius interesset his et, Lisque persius
+                interesset his et, in quot quidam persequeris vim, ad mea essent
+                possim iriure.
+              </li>
+              <li>
+                In quot quidam persequeris vim, ad mea essent possim iriure.
+                Quidam lisque persius interesset his et.
+              </li>
+              <li>
+                Quidam lisque persius interesset his et, Lisque persius
+                interesset his et.
+              </li>
+              <li>
+                Interesset his et, Lisque persius interesset his et, in quot
+                quidam persequeris vim, ad mea essent possim iriure.
+              </li>
+              <li>
+                Persius interesset his et, Lisque persius interesset his et, in
+                quot quidam persequeris vim, ad mea essent possim iriure.
+              </li>
+              <li>
+                Quot quidam persequeris vim Quidam lisque persius interesset his
+                et, Lisque persius interesset his et, in quot quidam persequeris
+                vim, ad mea essent possim iriure.
+              </li>
+            </ol>
+          </div>
         </div>
-      </footer>
-    </section>
-    <!--/ Section Contact-footer End /-->
+      </div>
+    </div>
+    <!-- Terms & Policy Modal End -->
 
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-    <div id="preloader"></div>
+    <!-- Disclaimer Modal
+================================== -->
+    <div id="disclaimer" class="modal fade" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content bg-dark-2 text-light">
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title text-white">Copyright & Disclaimer</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4">
+            <p>
+              Simply dummy text of the printing and typesetting industry. Lorem
+              Ipsum has been the industry's standard dummy text ever since the
+              1500s, when an unknown printer took a galley of type and scrambled
+              it to make a type specimen book.
+            </p>
+            <ul class="lh-lg">
+              <li>
+                Lisque persius interesset his et, in quot quidam persequeris
+                vim, ad mea essent possim iriure.
+              </li>
+              <li>
+                Quidam lisque persius interesset his et, Lisque persius
+                interesset his et, in quot quidam persequeris vim, ad mea essent
+                possim iriure.
+              </li>
+              <li>
+                In quot quidam persequeris vim, ad mea essent possim iriure.
+                Quidam lisque persius interesset his et.
+              </li>
+              <li>
+                Quidam lisque persius interesset his et, Lisque persius
+                interesset his et.
+              </li>
+              <li>
+                Interesset his et, Lisque persius interesset his et, in quot
+                quidam persequeris vim, ad mea essent possim iriure.
+              </li>
+              <li>
+                Persius interesset his et, Lisque persius interesset his et, in
+                quot quidam persequeris vim, ad mea essent possim iriure.
+              </li>
+              <li>
+                Quot quidam persequeris vim Quidam lisque persius interesset his
+                et, Lisque persius interesset his et, in quot quidam persequeris
+                vim, ad mea essent possim iriure.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Disclaimer Modal End -->
 
-    <!-- JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="lib/popper/popper.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/counterup/jquery.waypoints.min.js"></script>
-    <script src="lib/counterup/jquery.counterup.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <!-- Contact Form JavaScript File -->
-    <script src="contactform/contactform.js"></script>
+    <!-- Styles Switcher -->
+    <!-- <div id="styles-switcher" class="right">
+      <h2 class="text-3">Color Switcher</h2>
+      <hr />
+      <ul>
+        <li
+          class="indigo"
+          data-bs-toggle="tooltip"
+          title="Indigo"
+          data-path="css/color-indigo.css"
+        ></li>
+        <li
+          class="blue"
+          data-bs-toggle="tooltip"
+          title="Blue"
+          data-path="css/color-blue.css"
+        ></li>
+        <li
+          class="purple"
+          data-bs-toggle="tooltip"
+          title="Purple"
+          data-path="css/color-purple.css"
+        ></li>
+        <li
+          class="cyan"
+          data-bs-toggle="tooltip"
+          title="Cyan"
+          data-path="css/color-cyan.css"
+        ></li>
+        <li
+          class="red"
+          data-bs-toggle="tooltip"
+          title="Red"
+          data-path="css/color-red.css"
+        ></li>
+        <li
+          class="pink"
+          data-bs-toggle="tooltip"
+          title="Pink"
+          data-path="css/color-pink.css"
+        ></li>
+        <li
+          class="green"
+          data-bs-toggle="tooltip"
+          title="Green"
+          data-path="css/color-green.css"
+        ></li>
+        <li
+          class="yellow"
+          data-bs-toggle="tooltip"
+          title="Yellow"
+          data-path="css/color-yellow.css"
+        ></li>
+        <li
+          class="orange"
+          data-bs-toggle="tooltip"
+          title="Orange"
+          data-path="css/color-orange.css"
+        ></li>
+        <li
+          class="brown"
+          data-bs-toggle="tooltip"
+          title="Brown"
+          data-path="css/color-brown.css"
+        ></li>
+      </ul>
+      <button
+        class="btn btn-dark btn-sm w-100 border-0 fw-400 rounded-0 shadow-none"
+        id="reset-color"
+      >
+        Reset Default Teal
+      </button>
+      <button class="btn switcher-toggle"><i class="fas fa-cog"></i></button>
+    </div> -->
+    <!-- Styles Switcher End -->
 
-    <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
+    <!-- JavaScript -->
+    <script src="js/downloadpdf.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Easing -->
+    <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+    <!-- Appear -->
+    <script src="vendor/jquery.appear/jquery.appear.min.js"></script>
+    <!-- Images Loaded -->
+    <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <!-- Counter -->
+    <script src="vendor/jquery.countTo/jquery.countTo.min.js"></script>
+    <!-- Parallax Bg -->
+    <script src="vendor/parallaxie/parallaxie.min.js"></script>
+    <!-- Typed -->
+    <script src="vendor/typed/typed.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+    <!-- isotope Portfolio Filter -->
+    <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Style Switcher -->
+    <script src="js/switcher.min.js"></script>
+    <!-- Custom Script -->
+    <script src="js/theme.js"></script>
   </body>
 </html>
