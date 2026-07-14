@@ -20,8 +20,10 @@
     />
 
     <!-- Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
       rel="stylesheet"
     />
 
@@ -53,6 +55,8 @@
     />
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <!-- AI Terminal Theme -->
+    <link rel="stylesheet" type="text/css" href="css/ai-theme.css" />
     <!-- Colors Css -->
     <link id="color-switcher" type="text/css" rel="stylesheet" href="#" />
   </head>
@@ -89,19 +93,8 @@
           >
             <!-- Logo -->
             <a href="index.html" class="mb-lg-auto mt-lg-4">
-              <span
-                class="bg-dark-2 rounded-pill p-2 mb-lg-1 d-none d-lg-inline-block"
-              >
-                <img
-                  class="img-fluid rounded-pill d-block"
-                  src="images/profile.jpg"
-                  title="I'm Shaad"
-                  alt=""
-                  style="width: 175px"
-                />
-              </span>
               <h1 class="text-5 text-white text-center mb-0 d-lg-block">
-                Mohammad Sayeed
+                <span class="text-primary">&gt;</span> Mohammad_Sayeed
               </h1>
             </a>
             <!-- Logo End -->
@@ -128,11 +121,6 @@
                 <li class="nav-item">
                   <a class="nav-link smooth-scroll" href="#portfolio"
                     >Portfolio</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link smooth-scroll" href="#testimonial"
-                    >Testimonial</a
                   >
                 </li>
                 <li class="nav-item">
@@ -222,7 +210,7 @@
                       <span class="typed"></span>
                     </h2>
                     <p class="text-5 text-light mb-4">
-                      based in Mumbai, India.
+                      Building ML &amp; GenAI systems that ship.
                     </p>
                     <a
                       href="#contact"
@@ -271,36 +259,28 @@
                   Developer
                 </h2>
                 <p class="text-white-50">
-                  I help you build brand for your business at an affordable
-                  price. Thousands of clients have procured exceptional results
-                  while working with our dedicated team. when an unknown printer
+                  I help you build products for your business at an affordable
+                  price. Many of clients have procured exceptional results
+                  while working with us. when an unknown printer
                   took a galley of type and scrambled it to make a type specimen
                   book.
                 </p>
                 <p class="text-white-50">
                   Delivering work within time and budget which meets client’s
-                  requirements is our moto. Lorem Ipsum has been the industry's
-                  standard dummy text ever when an unknown printer took a
-                  galley.
+                  requirements is our moto.
                 </p>
               </div>
               <div class="col-lg-5 col-xl-4">
                 <div class="ps-lg-4">
-                  <ul class="list-style-2 list-style-light text-light">
-                    <li>
-                      <span class="fw-600 me-2">Name:</span>Mohammad Sayeed
-                    </li>
+                  <!-- <ul class="list-style-2 list-style-light text-light">
                     <li>
                       <span class="fw-600 me-2">Email:</span
                       ><a href="mailto:shaadqureshi1709@gmail.com"
                         >khansayeed25519@gmail.com</a
                       >
                     </li>
-                    <li><span class="fw-600 me-2">Age:</span>24</li>
-                    <li class="border-0">
-                      <span class="fw-600 me-2">From:</span>Mumbai, India
-                    </li>
-                  </ul>
+                    <li class="border-0"><span class="fw-600 me-2">Age:</span>24</li>
+                  </ul> -->
                   <a
                     href="#"
                     onclick="downloadPDF(event)"
@@ -317,7 +297,7 @@
                 <div class="col-6 col-md-3">
                   <div class="featured-box text-center">
                     <h4 class="text-12 text-white-50 mb-0">
-                      <span class="counter" data-from="0" data-to="2">2</span>+
+                      <span class="counter" data-from="0" data-to="4">4</span>+
                     </h4>
                     <p class="text-light mb-0">Years Experience</p>
                   </div>
@@ -334,7 +314,7 @@
                 <div class="col-6 col-md-3">
                   <div class="featured-box text-center">
                     <h4 class="text-12 text-white-50 mb-0">
-                      <span class="counter" data-from="0" data-to="4">4</span
+                      <span class="counter" data-from="0" data-to="7">7</span
                       >+
                     </h4>
                     <p class="text-light mb-0">Projects Done</p>
@@ -343,7 +323,7 @@
                 <div class="col-6 col-md-3">
                   <div class="featured-box text-center">
                     <h4 class="text-12 text-white-50 mb-0">
-                      <span class="counter" data-from="0" data-to="0">0</span>
+                      <span class="counter" data-from="0" data-to="1">1</span>
                     </h4>
                     <p class="text-light mb-0">Get Awards</p>
                   </div>
@@ -470,13 +450,10 @@
                   </h3>
                   <p class="text-primary">Dr. Babasaheb Ambedkar Technological University</p>
                   <p class="text-white-50 mb-0">
-                    IEEE-RAIT Summer Internship - Summer Intern April 2021
-                    <br />
-                    June 2021<br />
-                    Gym Management System: Led the creation of a gym management
-                    system for owners. Efficiently recorded client and payment
-                    data, with seamless features for adding, updating, and
-                    removing records. Utilized Python and MySQL.
+                    Coursework and academic projects covering Data Structures
+                    &amp; Algorithms, DBMS, Operating Systems, Computer
+                    Networks, and core Machine Learning &amp; AI fundamentals,
+                    with hands-on labs in Python, SQL, and applied statistics.
                   </p>
                 </div>
                 
@@ -487,39 +464,71 @@
                 <h2 class="text-6 text-white fw-600 mb-4">My Experience</h2>
                 <div class="bg-dark rounded p-4 mb-4">
                   <p class="badge bg-danger text-2 fw-400">
-                    Nov 2023 - Present
+                    Jun 2025 - Apr 2026
                   </p>
-                  <h3 class="text-5 text-white">AI Developer</h3>
-                  <p class="text-primary">Intelegain Technologies Pvt. Ltd.</p>
-                  <!-- <p class="text-white-50 mb-0">
-                    Lisque persius interesset his et, in quot quidam persequeris
-                    vim, ad mea essent possim iriure.
-                  </p> -->
+                  <h3 class="text-5 text-white">Associate Consultant (AI/ML Engineer)</h3>
+                  <p class="text-primary">KPMG India Services LLP</p>
 
                   <ul class="text-white-50 mb-0">
                     <li>
-                      Boozno Venue Management System: Used Sync-fusion React
-                      Components like Scheduler, Data Table with sorting,
-                      relocating columns etc, Toasters and many more to enhance
-                      the user experience in the admin portal and venue portal.
+                      AI Sales Navigator: Built and deployed ML models
+                      (XGBoost, Random Forest) to predict MFD churn and
+                      propensity to buy, enabling AMCs to track distributor
+                      behavior and improve sales strategy. Performed customer
+                      segmentation using KMeans and behavioral analytics, with
+                      pipelines deployed on AWS Sagemaker and Athena SQL.
                     </li>
                     <li>
-                      Texas Choral Riser Rental: Led the development of Texas
-                      Choral Riser Rental's dynamic responsive website with
-                      ReactJS, showcasing modern web development skills and
-                      effective teamwork.
+                      Konnect.ai (Speech to Text): Built an AI pipeline using
+                      Gemini 2.5 Pro to transcribe financial trade calls and
+                      extract entities such as stock names, prices, and trade
+                      intents, reducing transcription WER via custom prompt
+                      pipelines.
                     </li>
                     <li>
-                      Saber Giffin E-commerce Web Application: Improved B2B
-                      e-commerce UI for Saber Giffin Traffiks L.L.C. by updating
-                      addresses and enhancing features with HTML, CSS, jQuery,
-                      JS, and Bootstrap5.
+                      Kredit.ai (Credit Risk Evaluation): Developed an
+                      AI-driven credit risk platform with Random Forest
+                      scoring, automated KYC (Aadhaar, PAN, face recognition
+                      via Keras VGGFace), and YOLOv8-based property asset
+                      detection, improving verification speed by 60%.
                     </li>
                     <li>
-                      Enterprise Resource Planning Intelegain Website: Created
-                      an ERP page at Intelegain Technologies with PHP,
-                      WordPress, HTML, CSS, JavaScript, jQuery, and Bootstrap,
-                      showcasing web development prowess.
+                      AI-based Ticketing System: Built an IT automation bot
+                      using NLP embeddings (all-MiniLM-L6-v2) and FAISS
+                      semantic search, achieving 92% intent accuracy for
+                      ticket routing.
+                    </li>
+                  </ul>
+                </div>
+                <div class="bg-dark rounded p-4 mb-4">
+                  <p class="badge bg-danger text-2 fw-400">
+                    Nov 2023 - May 2025
+                  </p>
+                  <h3 class="text-5 text-white">AI Developer</h3>
+                  <p class="text-primary">Intelegain Technologies Pvt. Ltd.</p>
+
+                  <ul class="text-white-50 mb-0">
+                    <li>
+                      Professr – AI Powered HRMS Chatbot: Designed and
+                      deployed an enterprise-grade chatbot automating leave
+                      management, payroll queries, policy lookup, and employee
+                      data access via natural language.
+                    </li>
+                    <li>
+                      Built a scalable Python backend integrated with
+                      enterprise HRMS APIs and Microsoft Graph for real-time
+                      data access and workflow automation.
+                    </li>
+                    <li>
+                      Built a RAG-based conversational system using LangChain
+                      and Azure OpenAI, with intent recognition, entity
+                      extraction, and context-aware multi-turn dialogue via
+                      Microsoft CLU.
+                    </li>
+                    <li>
+                      Deployed on Microsoft Teams via Azure Bot Service and
+                      Bot Framework, with session memory, fallback handling,
+                      and human escalation.
                     </li>
                   </ul>
                 </div>
@@ -529,27 +538,24 @@
                   </p>
                   <h3 class="text-5 text-white">Jr. AI Developer</h3>
                   <p class="text-primary">CheckExplore Technologies</p>
-                  <!-- <p class="text-white-50 mb-0">Projects: • • •</p> -->
 
                   <ul class="text-white-50 mb-0">
                     <li>
-                      Aditya Birla Sun Life Insurance – Admin Panel: Led Aditya
-                      Birla Capital Admin Panel development, enabling order and
-                      payment oversight, backend user data management, and UI
-                      enhancements. Key involvement in JavaScript coding.
-                      Technologies: MySQL, NodeJS, ReactJS.
+                      VahanCheck – Vehicle Pre Inspection System: Trained and
+                      deployed computer vision models (YOLOv4/v7, Faster/Mask
+                      R-CNN, Yolact) for vehicle part classification, damage
+                      detection, angle estimation, and OCR-based extraction.
+                      Built scalable inference pipelines with FastAPI, Docker,
+                      and RabbitMQ, reducing latency by 40% via TensorRT-ready
+                      optimizations.
                     </li>
                     <li>
-                      PolicyEra Web Application: Enhanced customer policy data
-                      management in the Policy Era Admin Panel by implementing
-                      edit, add, and delete functions, boosting database
-                      efficiency.
-                    </li>
-                    <li>
-                      OMA Women’s Hospital Website: Contributed to the
-                      development of the OMA Women's Hospital website using
-                      ReactJS, assisting in the creation of dynamic and engaging
-                      web content.
+                      TyreCheck – Automated Tire Warranty & Claim Process:
+                      Developed deep learning models (YOLO, Faster R-CNN,
+                      Yolact) for real-time tire defect detection and tread
+                      depth measurement using OCR, with end-to-end APIs via
+                      FastAPI and Docker, and cross-platform deployment using
+                      ONNX Runtime.
                     </li>
                   </ul>
                 </div>
@@ -706,6 +712,16 @@
               >
                 <img src="images/svg/matplotlib.svg" class="w-100" alt="" />
               </div>
+              <div
+                class="col-md-2 col-4 d-flex align-items-center justify-content-center"
+              >
+                <img src="images/svg/langchain.svg" class="w-100" alt="" />
+              </div>
+              <div
+                class="col-md-2 col-4 d-flex align-items-center justify-content-center"
+              >
+                <img src="images/svg/langgraph.svg" class="w-100" alt="" />
+              </div>
             </div>
             <h5 class="text-primary fw-light">Application Softwares</h5>
             <div class="row mb-4">
@@ -791,161 +807,165 @@
                 <a data-filter="*" class="nav-link active" href="">All</a>
               </li>
               <li class="nav-item">
-                <a data-filter=".design" href="" class="nav-link">Design</a>
+                <a data-filter=".kpmg" href="" class="nav-link">KPMG</a>
               </li>
               <li class="nav-item">
-                <a data-filter=".brand" href="" class="nav-link">Brand</a>
+                <a data-filter=".intelegain" href="" class="nav-link"
+                  >Intelegain</a
+                >
               </li>
               <li class="nav-item">
-                <a data-filter=".photos" href="" class="nav-link">Photos</a>
+                <a data-filter=".checkexplore" href="" class="nav-link"
+                  >CheckExplore</a
+                >
               </li>
             </ul>
             <!-- Filter Menu end -->
-            <div class="portfolio popup-ajax-gallery">
+            <div class="portfolio">
               <div class="row portfolio-filter g-4">
-                <div class="col-sm-6 col-lg-4 brand">
+                <div class="col-sm-6 col-lg-4 kpmg">
                   <div class="portfolio-box rounded">
                     <div class="portfolio-img rounded">
                       <img
                         class="img-fluid d-block"
-                        src="images/projects/project-1.jpg"
+                        src="images/projects/project-1-sales-navigator.svg"
                         alt=""
                       />
-                      <div class="portfolio-overlay">
-                        <a
-                          class="popup-ajax stretched-link"
-                          href="ajax/portfolio-ajax-project-dark-1.html"
-                        ></a>
-                        <div class="portfolio-overlay-details">
-                          <h5 class="text-white fw-400">Project Title</h5>
-                          <span class="text-light">Category</span>
-                        </div>
+                      <a
+                        href="#"
+                        class="project-trigger stretched-link"
+                        data-bs-toggle="modal"
+                        data-bs-target="#projectModal1"
+                      ></a>
+                      <div class="portfolio-caption">
+                        <h5 class="text-white fw-400">AI Sales Navigator</h5>
+                        <span class="text-light">KPMG India Services LLP</span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6 col-lg-4 design">
+                <div class="col-sm-6 col-lg-4 kpmg">
                   <div class="portfolio-box rounded">
                     <div class="portfolio-img rounded">
                       <img
                         class="img-fluid d-block"
-                        src="images/projects/project-2.jpg"
+                        src="images/projects/project-2-konnect-ai.svg"
                         alt=""
                       />
-                      <div class="portfolio-overlay">
-                        <a
-                          class="popup-ajax stretched-link"
-                          href="ajax/portfolio-ajax-project-dark-2.html"
-                        ></a>
-                        <div class="portfolio-overlay-details">
-                          <h5 class="text-white fw-400">Project Title</h5>
-                          <span class="text-light">Category</span>
-                        </div>
+                      <a
+                        href="#"
+                        class="project-trigger stretched-link"
+                        data-bs-toggle="modal"
+                        data-bs-target="#projectModal2"
+                      ></a>
+                      <div class="portfolio-caption">
+                        <h5 class="text-white fw-400">Konnect.ai</h5>
+                        <span class="text-light">KPMG India Services LLP</span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6 col-lg-4 artwork photos">
+                <div class="col-sm-6 col-lg-4 kpmg">
                   <div class="portfolio-box rounded">
                     <div class="portfolio-img rounded">
                       <img
                         class="img-fluid d-block"
-                        src="images/projects/project-3.jpg"
+                        src="images/projects/project-3-kredit-ai.svg"
                         alt=""
                       />
-                      <div class="portfolio-overlay">
-                        <a
-                          class="popup-ajax stretched-link"
-                          href="ajax/portfolio-ajax-project-dark-3.html"
-                        ></a>
-                        <div class="portfolio-overlay-details">
-                          <h5 class="text-white fw-400">Project Title</h5>
-                          <span class="text-light">Category</span>
-                        </div>
+                      <a
+                        href="#"
+                        class="project-trigger stretched-link"
+                        data-bs-toggle="modal"
+                        data-bs-target="#projectModal3"
+                      ></a>
+                      <div class="portfolio-caption">
+                        <h5 class="text-white fw-400">Kredit.ai</h5>
+                        <span class="text-light">KPMG India Services LLP</span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6 col-lg-4 artwork brand photos">
+                <div class="col-sm-6 col-lg-4 kpmg">
                   <div class="portfolio-box rounded">
                     <div class="portfolio-img rounded">
                       <img
                         class="img-fluid d-block"
-                        src="images/projects/project-4.jpg"
+                        src="images/projects/project-4-ticketing-system.svg"
                         alt=""
                       />
-                      <div class="portfolio-overlay">
-                        <a
-                          class="popup-ajax stretched-link"
-                          href="ajax/portfolio-ajax-project-dark-4.html"
-                        ></a>
-                        <div class="portfolio-overlay-details">
-                          <h5 class="text-white fw-400">Project Title</h5>
-                          <span class="text-light">Category</span>
-                        </div>
+                      <a
+                        href="#"
+                        class="project-trigger stretched-link"
+                        data-bs-toggle="modal"
+                        data-bs-target="#projectModal4"
+                      ></a>
+                      <div class="portfolio-caption">
+                        <h5 class="text-white fw-400">AI-Based Ticketing System</h5>
+                        <span class="text-light">KPMG India Services LLP</span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6 col-lg-4 design">
+                <div class="col-sm-6 col-lg-4 intelegain">
                   <div class="portfolio-box rounded">
                     <div class="portfolio-img rounded">
                       <img
                         class="img-fluid d-block"
-                        src="images/projects/project-5.jpg"
+                        src="images/projects/project-5-professr-hrms.svg"
                         alt=""
                       />
-                      <div class="portfolio-overlay">
-                        <a
-                          class="popup-ajax stretched-link"
-                          href="ajax/portfolio-ajax-project-dark-5.html"
-                        ></a>
-                        <div class="portfolio-overlay-details">
-                          <h5 class="text-white fw-400">Project Title</h5>
-                          <span class="text-light">Category</span>
-                        </div>
+                      <a
+                        href="#"
+                        class="project-trigger stretched-link"
+                        data-bs-toggle="modal"
+                        data-bs-target="#projectModal5"
+                      ></a>
+                      <div class="portfolio-caption">
+                        <h5 class="text-white fw-400">Professr – HRMS Chatbot</h5>
+                        <span class="text-light">Intelegain Technologies</span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6 col-lg-4 brand">
+                <div class="col-sm-6 col-lg-4 checkexplore">
                   <div class="portfolio-box rounded">
                     <div class="portfolio-img rounded">
                       <img
                         class="img-fluid d-block"
-                        src="images/projects/project-6.jpg"
+                        src="images/projects/project-6-vahancheck.svg"
                         alt=""
                       />
-                      <div class="portfolio-overlay">
-                        <a
-                          class="popup-ajax stretched-link"
-                          href="ajax/portfolio-ajax-project-dark-6.html"
-                        ></a>
-                        <div class="portfolio-overlay-details">
-                          <h5 class="text-white fw-400">Project Title</h5>
-                          <span class="text-light">Category</span>
-                        </div>
+                      <a
+                        href="#"
+                        class="project-trigger stretched-link"
+                        data-bs-toggle="modal"
+                        data-bs-target="#projectModal6"
+                      ></a>
+                      <div class="portfolio-caption">
+                        <h5 class="text-white fw-400">VahanCheck</h5>
+                        <span class="text-light">CheckExplore Technologies</span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6 col-lg-4 design photos">
+                <div class="col-sm-6 col-lg-4 checkexplore">
                   <div class="portfolio-box rounded">
                     <div class="portfolio-img rounded">
                       <img
                         class="img-fluid d-block"
-                        src="images/projects/project-7.jpg"
+                        src="images/projects/project-7-tyrecheck.svg"
                         alt=""
                       />
-                      <div class="portfolio-overlay">
-                        <a
-                          class="popup-ajax stretched-link"
-                          href="ajax/portfolio-ajax-project-dark-7.html"
-                        ></a>
-                        <div class="portfolio-overlay-details">
-                          <h5 class="text-white fw-400">Project Title</h5>
-                          <span class="text-light">Category</span>
-                        </div>
+                      <a
+                        href="#"
+                        class="project-trigger stretched-link"
+                        data-bs-toggle="modal"
+                        data-bs-target="#projectModal7"
+                      ></a>
+                      <div class="portfolio-caption">
+                        <h5 class="text-white fw-400">TyreCheck</h5>
+                        <span class="text-light">CheckExplore Technologies</span>
                       </div>
                     </div>
                   </div>
@@ -956,164 +976,349 @@
         </section>
         <!-- Portfolio end -->
 
-        <!-- Testimonial
+        <!-- Project Detail Modals
     ============================================= -->
-        <section id="testimonial" class="section bg-dark-1">
-          <div class="container px-lg-5">
-            <!-- Heading -->
-            <div class="position-relative d-flex text-center mb-5">
-              <h2
-                class="text-24 text-muted opacity-1 text-uppercase fw-600 w-100 mb-0"
-              >
-                Testimonial
-              </h2>
-              <p
-                class="text-9 text-white fw-600 position-absolute w-100 align-self-center lh-base mb-0"
-              >
-                Client Speak<span
-                  class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"
-                ></span>
-              </p>
-            </div>
-            <!-- Heading end-->
-
-            <div
-              class="owl-carousel owl-light owl-theme"
-              data-loop="true"
-              data-nav="false"
-              data-autoplay="false"
-              data-margin="25"
-              data-stagepadding="0"
-              data-slideby="1"
-              data-items-xs="1"
-              data-items-sm="1"
-              data-items-md="1"
-              data-items-lg="2"
-            >
-              <div class="item">
-                <div class="bg-dark rounded p-5">
-                  <div class="d-flex align-items-center mt-auto mb-4">
-                    <img
-                      class="img-fluid rounded-circle d-inline-block w-auto"
-                      src="images/testimonial/client-sm-3.jpg"
-                      alt=""
-                    />
-                    <p class="ms-3 mb-0">
-                      <strong class="d-block text-white fw-600"
-                        >Dennis Jacques</strong
-                      >
-                      <span class="text-white-50 fw-500">User from USA</span>
-                    </p>
-                  </div>
-                  <p class="text-light mb-4">
-                    “Only trying it out since a few days. But up to now
-                    excellent. Seems to work flawlessly. priced simply dummy
-                    text of the printing and typesetting industry.”
-                  </p>
-                  <span class="text-2">
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                  </span>
-                </div>
+        <div
+          class="modal fade project-modal"
+          id="projectModal1"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">AI Sales Navigator</h3>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="modal"
+                ></button>
               </div>
-              <div class="item">
-                <div class="bg-dark rounded p-5">
-                  <div class="d-flex align-items-center mt-auto mb-4">
-                    <img
-                      class="img-fluid rounded-circle d-inline-block w-auto"
-                      src="images/testimonial/client-sm-1.jpg"
-                      alt=""
-                    />
-                    <p class="ms-3 mb-0">
-                      <strong class="d-block text-white fw-600"
-                        >Jay Shah</strong
-                      >
-                      <span class="text-white-50 fw-500"
-                        >Founder at Icomatic Pvt Ltd</span
-                      >
-                    </p>
-                  </div>
-                  <p class="text-light mb-4">
-                    "Easy to use, reasonably priced simply dummy text of the
-                    printing and typesetting industry. Quidam lisque persius
-                    interesset his et, in quot quidam possim iriure.”
-                  </p>
-                  <span class="text-2">
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="item">
-                <div class="bg-dark rounded p-5">
-                  <div class="d-flex align-items-center mt-auto mb-4">
-                    <img
-                      class="img-fluid rounded-circle d-inline-block w-auto"
-                      src="images/testimonial/client-sm-2.jpg"
-                      alt=""
-                    />
-                    <p class="ms-3 mb-0">
-                      <strong class="d-block text-white fw-600"
-                        >Patrick Cary</strong
-                      >
-                      <span class="text-white-50 fw-500"
-                        >Freelancer from USA</span
-                      >
-                    </p>
-                  </div>
-                  <p class="text-light mb-4">
-                    “I am happy Working with printing and typesetting industry.
-                    Quidam lisque persius interesset his et, in quot quidam
-                    persequeris essent possim iriure.”
-                  </p>
-                  <span class="text-2">
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="item">
-                <div class="bg-dark rounded p-5">
-                  <div class="d-flex align-items-center mt-auto mb-4">
-                    <img
-                      class="img-fluid rounded-circle d-inline-block w-auto"
-                      src="images/testimonial/client-sm-4.jpg"
-                      alt=""
-                    />
-                    <p class="ms-3 mb-0">
-                      <strong class="d-block text-white fw-600"
-                        >Chris Tom</strong
-                      >
-                      <span class="text-white-50 fw-500">User from UK</span>
-                    </p>
-                  </div>
-                  <p class="text-light mb-4">
-                    “I have used them twice now. Good rates, very efficient
-                    service and priced simply dummy text of the printing and
-                    typesetting industry quidam interesset his et. Excellent.”
-                  </p>
-                  <span class="text-2">
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                    <i class="fas fa-star text-warning"></i>
-                  </span>
+              <div class="modal-body">
+                <p class="project-company">KPMG India Services LLP &middot; Jun 2025 – Apr 2026</p>
+                <p class="project-objective">
+                  Developed machine learning models to predict MFD churn and
+                  propensity to buy, enabling AMCs to track distributor
+                  behavior and improve sales strategy using predictive
+                  analytics.
+                </p>
+                <ul class="project-points">
+                  <li>
+                    Built and deployed ML models (XGBoost, Random Forest) to
+                    predict MFD churn and identify high-propensity investment
+                    schemes for targeted cross-selling.
+                  </li>
+                  <li>
+                    Performed customer segmentation using KMeans and
+                    behavioral analytics, enabling AMCs to derive actionable
+                    insights and improve distributor engagement.
+                  </li>
+                  <li>
+                    Designed data pipelines and model deployment workflows on
+                    AWS Sagemaker, leveraging Athena SQL for large-scale data
+                    processing and real-time analytics.
+                  </li>
+                </ul>
+                <div class="project-stack">
+                  <span>Python</span><span>XGBoost</span
+                  ><span>Random Forest</span><span>KMeans</span
+                  ><span>AWS Sagemaker</span><span>Athena SQL</span>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <!-- Testimonial end -->
+        </div>
+
+        <div
+          class="modal fade project-modal"
+          id="projectModal2"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">Konnect.ai – Speech to Text</h3>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p class="project-company">KPMG India Services LLP &middot; Jun 2025 – Apr 2026</p>
+                <p class="project-objective">
+                  Built an AI pipeline to convert financial trade calls into
+                  structured insights using speech recognition and NLP.
+                </p>
+                <ul class="project-points">
+                  <li>
+                    Developed a speech-to-text pipeline using Gemini 2.5 Pro,
+                    transcribing trade calls and extracting key entities such
+                    as stock names, prices, and trade intents.
+                  </li>
+                  <li>
+                    Implemented NLP-based entity recognition and
+                    summarization, enabling automated generation of
+                    actionable trade insights from unstructured audio data.
+                  </li>
+                  <li>
+                    Reduced transcription Word Error Rate (WER) by engineering
+                    custom prompt pipelines for entity extraction.
+                  </li>
+                </ul>
+                <div class="project-stack">
+                  <span>Python</span><span>Gemini 2.5 Pro</span
+                  ><span>NLP</span><span>Prompt Engineering</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade project-modal"
+          id="projectModal3"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">Kredit.ai – Credit Risk Evaluation</h3>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p class="project-company">KPMG India Services LLP &middot; Jun 2025 – Apr 2026</p>
+                <p class="project-objective">
+                  Developed an AI-driven credit risk platform for automated
+                  scoring, KYC verification, and asset-based loan assessment.
+                </p>
+                <ul class="project-points">
+                  <li>
+                    Built a credit scoring engine using Python and a Random
+                    Forest model for credit risk evaluation.
+                  </li>
+                  <li>
+                    Integrated automated KYC with Aadhaar, PAN, and face
+                    recognition via Keras (VGGFace).
+                  </li>
+                  <li>
+                    Applied YOLOv8 for property asset detection in loan
+                    assessment, improving verification speed by 60% and
+                    optimizing models for GPU inference.
+                  </li>
+                </ul>
+                <div class="project-stack">
+                  <span>Python</span><span>Random Forest</span
+                  ><span>Keras / VGGFace</span><span>YOLOv8</span
+                  ><span>GPU Inference</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade project-modal"
+          id="projectModal4"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">AI-Based Ticketing System</h3>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p class="project-company">KPMG India Services LLP &middot; Jun 2025 – Apr 2026</p>
+                <p class="project-objective">
+                  Built an intelligent IT automation bot to suggest solutions
+                  and automatically route support tickets.
+                </p>
+                <ul class="project-points">
+                  <li>
+                    Built the bot using Python, NLP embeddings
+                    (all-MiniLM-L6-v2), and semantic search to suggest
+                    solutions and route tickets based on intent and IT staff
+                    persona.
+                  </li>
+                  <li>
+                    Achieved 92% intent accuracy using FAISS for
+                    high-concurrency semantic search.
+                  </li>
+                </ul>
+                <div class="project-stack">
+                  <span>Python</span><span>NLP Embeddings</span
+                  ><span>FAISS</span><span>Semantic Search</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade project-modal"
+          id="projectModal5"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">Professr – AI Powered HRMS Chatbot</h3>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p class="project-company">Intelegain Technologies Pvt. Ltd. &middot; Nov 2023 – May 2025</p>
+                <p class="project-objective">
+                  Designed and deployed an enterprise-grade AI chatbot to
+                  automate HR operations, letting employees interact with HR
+                  systems using natural language across leave management,
+                  payroll queries, policy lookup, and employee data access.
+                </p>
+                <ul class="project-points">
+                  <li>
+                    Developed a scalable Python backend integrated with
+                    enterprise HRMS APIs and Microsoft Graph for real-time
+                    data access and end-to-end workflow automation.
+                  </li>
+                  <li>
+                    Built a RAG-based conversational system using LangChain
+                    and Azure OpenAI, with intent recognition, entity
+                    extraction, and context-aware multi-turn dialogue using
+                    Microsoft CLU.
+                  </li>
+                  <li>
+                    Deployed on Microsoft Teams via Azure Bot Service and Bot
+                    Framework, implementing session memory, fallback
+                    handling, and human escalation for enterprise adoption.
+                  </li>
+                </ul>
+                <div class="project-stack">
+                  <span>Python</span><span>LangChain</span
+                  ><span>Azure OpenAI</span><span>RAG</span
+                  ><span>Microsoft CLU</span><span>Bot Framework</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade project-modal"
+          id="projectModal6"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">VahanCheck – Vehicle Pre Inspection System</h3>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p class="project-company">CheckExplore Technologies &middot; May 2022 – Oct 2023</p>
+                <p class="project-objective">
+                  Developed an AI-powered vehicle inspection system for
+                  insurance claims, using deep learning and computer vision to
+                  classify vehicle parts and detect damages.
+                </p>
+                <ul class="project-points">
+                  <li>
+                    Trained and deployed computer vision models (YOLOv4/v7,
+                    Faster/Mask R-CNN, Yolact) for vehicle part
+                    classification, damage detection, angle estimation, and
+                    OCR-based data extraction.
+                  </li>
+                  <li>
+                    Built scalable inference pipelines using FastAPI, Docker,
+                    and RabbitMQ, optimizing models for mobile deployment with
+                    TFLite (Android) for real-time inspection.
+                  </li>
+                  <li>
+                    Reduced model latency by 40% through TensorRT-ready
+                    architecture optimizations.
+                  </li>
+                </ul>
+                <div class="project-stack">
+                  <span>Python</span><span>CNN</span><span>YOLO</span
+                  ><span>OCR</span><span>FastAPI</span><span>Docker</span
+                  ><span>RabbitMQ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade project-modal"
+          id="projectModal7"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">TyreCheck – Automated Tire Warranty & Claim Process</h3>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p class="project-company">CheckExplore Technologies &middot; May 2022 – Oct 2023</p>
+                <p class="project-objective">
+                  Implemented an AI-powered tire inspection system using
+                  computer vision and OCR to automate warranty claims,
+                  enabling real-time assessments without manual inspection.
+                </p>
+                <ul class="project-points">
+                  <li>
+                    Developed and deployed deep learning models (YOLO, Faster
+                    R-CNN, Yolact) for real-time tire defect detection and
+                    tread depth measurement using OCR.
+                  </li>
+                  <li>
+                    Implemented end-to-end scalable APIs with FastAPI and
+                    Docker, enabling automated claim processing and
+                    eliminating manual inspection workflows.
+                  </li>
+                  <li>
+                    Streamlined cross-platform model compatibility using ONNX
+                    Runtime, enabling consistent performance across
+                    server-side and mobile environments.
+                  </li>
+                </ul>
+                <div class="project-stack">
+                  <span>Python</span><span>CNN</span><span>YOLO</span
+                  ><span>Yolact</span><span>Faster R-CNN</span
+                  ><span>OCR</span><span>Docker</span
+                  ><span>FastAPI</span><span>ONNX Runtime</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         <!-- Contact Me
     ============================================= -->
@@ -1139,23 +1344,12 @@
               <div
                 class="col-md-4 col-xl-3 order-1 order-md-0 text-center text-md-start"
               >
-                <h2 class="mb-3 text-5 text-white text-uppercase">Address</h2>
-                <p class="text-3 text-light mb-4">
-                  <!-- 4th Floor, Plot No.22,<br />
-                  145 Murphy Canyon Rd.<br /> -->
-                  Thane - 400604 <br />
-                  Maharashtra, India
-                </p>
+                <h2 class="mb-3 text-5 text-white text-uppercase">Contact</h2>
                 <p class="text-3 text-light mb-1">
                   <span class="text-primary text-4 me-2"
                     ><i class="fas fa-phone"></i></span
-                  >+91 (9565) 778 060
+                  >+91 95657 78060
                 </p>
-                <!-- <p class="text-3 text-light mb-1">
-                  <span class="text-primary text-4 me-2"
-                    ><i class="fas fa-fax"></i></span
-                  >(060) 555 545 555
-                </p> -->
                 <p class="text-3 text-light mb-4">
                   <span class="text-primary text-4 me-2"
                     ><i class="fas fa-envelope"></i></span
@@ -1267,7 +1461,7 @@
   <footer id="footer" class="section footer-dark bg-dark-1 px-0 py-4">
     <div class="container">
       <p class="mb-3 mb-lg-0 text-center">
-        Copyright © 2024 <span class="text-primary">Mohammad Sayeed</span>. All Rights
+        Copyright © 2026 <span class="text-primary">Mohammad Sayeed</span>. All Rights
         Reserved.
       </p>
     </div>

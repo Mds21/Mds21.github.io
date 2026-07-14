@@ -1,0 +1,450 @@
+/*===========================================================
+  AI TERMINAL THEME
+  A dark, circuit-and-terminal inspired reskin.
+  Loaded after stylesheet.css — everything here is an
+  intentional override of the base "Simone" template.
+===========================================================*/
+
+:root {
+  --term-bg: #060a08;
+  --term-panel: #0d130f;
+  --term-panel-2: #0a0f0c;
+  --term-line: #1c2b21;
+  --term-green: #39ff8c;
+  --term-green-dim: #1f9d57;
+  --term-amber: #ffb454;
+  --term-text: #d9f2df;
+  --term-text-muted: #7fa88a;
+
+  --bs-primary: var(--term-green);
+  --bs-primary-rgb: 57, 255, 140;
+}
+
+/* -------- Base type: ONE font, everywhere -------- */
+* {
+  font-family: "JetBrains Mono", monospace !important;
+}
+
+body {
+  background: var(--term-bg) !important;
+  color: var(--term-text-muted);
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+h1, h2, h3, h4, h5, h6,
+.navbar-nav .nav-link,
+.text-primary,
+.hero-content h1,
+.hero-content h2 {
+  letter-spacing: 0.01em;
+  font-weight: 700;
+}
+
+/* Keep Font Awesome glyphs working (icons are not text) */
+.fa, .fas, .far, .fal, .fad,
+i[class^="fa-"], i[class*=" fa-"] {
+  font-family: "Font Awesome 5 Free" !important;
+}
+.fab, i[class^="fab"] {
+  font-family: "Font Awesome 5 Brands" !important;
+}
+
+/* faint circuit-grid backdrop across the whole page */
+#main-wrapper {
+  position: relative;
+  background:
+    linear-gradient(var(--term-bg), var(--term-bg)),
+    repeating-linear-gradient(0deg, rgba(57,255,140,0.035) 0px, rgba(57,255,140,0.035) 1px, transparent 1px, transparent 42px),
+    repeating-linear-gradient(90deg, rgba(57,255,140,0.035) 0px, rgba(57,255,140,0.035) 1px, transparent 1px, transparent 42px);
+  background-color: var(--term-bg);
+}
+
+/* subtle scanline overlay */
+#main-wrapper::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0px,
+    rgba(0, 0, 0, 0) 2px,
+    rgba(0, 0, 0, 0.06) 3px
+  );
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+}
+
+/* -------- Panels / cards -------- */
+.bg-dark,
+.bg-dark-1,
+.bg-dark-2,
+.bg-dark-3 {
+  background-color: var(--term-panel) !important;
+}
+
+.bg-dark.rounded,
+.featured-box.style-3,
+.portfolio-item,
+.testimonial-box {
+  border: 1px solid var(--term-line);
+  border-radius: 2px !important;
+  position: relative;
+}
+
+/* HUD corner brackets on resume / experience cards */
+.bg-dark.rounded.p-4 {
+  padding: 1.5rem !important;
+}
+.bg-dark.rounded.p-4::before,
+.bg-dark.rounded.p-4::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--term-green);
+  opacity: 0.8;
+}
+.bg-dark.rounded.p-4::before {
+  top: -1px;
+  left: -1px;
+  border-right: none;
+  border-bottom: none;
+}
+.bg-dark.rounded.p-4::after {
+  bottom: -1px;
+  right: -1px;
+  border-left: none;
+  border-top: none;
+}
+
+/* -------- Section eyebrows: giant faint watermark word, "// " prefixed -------- */
+.text-24.text-uppercase {
+  color: var(--term-green) !important;
+  letter-spacing: 0.05em;
+  font-size: clamp(1.8rem, 5vw, 4.25rem) !important;
+}
+.text-24.text-uppercase::before {
+  content: "// ";
+  color: var(--term-amber);
+}
+
+.heading-separator-line {
+  border-color: var(--term-green) !important;
+  width: 60px !important;
+  opacity: 0.9;
+}
+
+.text-9.fw-600 {
+  font-size: 1.9rem !important;
+}
+
+/* -------- Compact layout: less scrolling, tighter rhythm -------- */
+.section {
+  padding: 2.75rem 0 !important;
+}
+.position-relative.d-flex.text-center.mb-5 {
+  margin-bottom: 1.75rem !important;
+  min-height: auto !important;
+}
+.row.gy-5 {
+  --bs-gutter-y: 1.75rem !important;
+}
+.mb-4 {
+  margin-bottom: 1rem !important;
+}
+.mb-5 {
+  margin-bottom: 1.5rem !important;
+}
+.mt-4 {
+  margin-top: 1rem !important;
+}
+.text-24.text-uppercase {
+  line-height: 1 !important;
+}
+#intro .hero-content {
+  min-height: 88vh !important;
+}
+.bg-dark.rounded.p-4 {
+  padding: 1.1rem 1.3rem !important;
+  margin-bottom: 1rem !important;
+}
+.bg-dark.rounded.p-4 h3.text-5 {
+  font-size: 1.05rem !important;
+  margin-bottom: 0.15rem !important;
+}
+.bg-dark.rounded.p-4 ul {
+  margin-top: 0.5rem;
+}
+.bg-dark.rounded.p-4 ul li {
+  font-size: 0.86rem;
+  line-height: 1.55;
+  margin-bottom: 0.45rem;
+}
+.bg-dark.rounded.p-4 p.text-primary {
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
+.featured-box.style-3 {
+  padding-top: 0.4rem !important;
+  padding-bottom: 0.4rem !important;
+}
+.portfolio.row.g-4,
+.portfolio .row.g-4 {
+  --bs-gutter-y: 1.25rem;
+}
+
+/* -------- Badges as terminal tags -------- */
+.badge.bg-danger {
+  background: transparent !important;
+  border: 1px solid var(--term-amber);
+  color: var(--term-amber) !important;
+  border-radius: 2px;
+  padding: 0.35em 0.7em;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+.badge.bg-danger::before {
+  content: "[ ";
+}
+.badge.bg-danger::after {
+  content: " ]";
+}
+
+/* -------- Links / accents -------- */
+a,
+.text-primary {
+  color: var(--term-green) !important;
+}
+a:hover {
+  color: var(--term-amber) !important;
+}
+
+.border-primary {
+  border-color: var(--term-green) !important;
+}
+
+/* -------- Nav -------- */
+.navbar-nav .nav-link {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  color: var(--term-text-muted) !important;
+}
+.navbar-nav .nav-link::before {
+  content: "";
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: var(--term-green) !important;
+}
+.navbar-nav .nav-link.active::before {
+  content: "> ";
+  color: var(--term-amber);
+}
+
+header#header,
+.primary-menu {
+  background-color: var(--term-panel-2) !important;
+  border-right: 1px solid var(--term-line);
+}
+
+/* -------- Buttons: terminal command style -------- */
+.btn.rounded-pill {
+  border-radius: 2px !important;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+}
+.btn.rounded-pill::before {
+  content: "[ ";
+}
+.btn.rounded-pill::after {
+  content: " ]";
+}
+
+.btn-primary.rounded-pill {
+  background-color: transparent !important;
+  border-color: var(--term-green) !important;
+  color: var(--term-green) !important;
+}
+.btn-primary.rounded-pill:hover {
+  background-color: var(--term-green) !important;
+  color: var(--term-panel) !important;
+}
+
+.btn-outline-primary.rounded-pill {
+  border-color: var(--term-green) !important;
+  color: var(--term-green) !important;
+}
+.btn-outline-primary.rounded-pill:hover {
+  background-color: var(--term-green) !important;
+  color: var(--term-panel) !important;
+}
+
+/* -------- Hero -------- */
+.hero-mask {
+  background: var(--term-bg) !important;
+  opacity: 0.88 !important;
+}
+.hero-content .text-7 {
+  color: var(--term-green-dim) !important;
+}
+.hero-content .text-7::before {
+  content: "$ ";
+  color: var(--term-amber);
+}
+.hero-content .text-16 .typed {
+  color: var(--term-green);
+}
+.typed-cursor {
+  color: var(--term-amber) !important;
+}
+
+/* -------- Skill icons -------- */
+.svg-icon,
+.featured-box-icon {
+  filter: none;
+}
+.featured-box-icon.text-primary {
+  color: var(--term-green) !important;
+  border: 1px solid var(--term-line);
+}
+
+/* -------- Progress / counters -------- */
+.counter {
+  color: var(--term-green) !important;
+}
+
+/* -------- Scrollbar, a small terminal touch -------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--term-panel-2);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--term-green-dim);
+  border-radius: 0;
+}
+
+/* -------- Project detail modals -------- */
+.project-modal .modal-content {
+  background: var(--term-panel);
+  border: 1px solid var(--term-line);
+  border-radius: 2px;
+}
+.project-modal .modal-header {
+  border-bottom: 1px solid var(--term-line);
+  padding: 1.25rem 1.5rem;
+}
+.project-modal .modal-title {
+  color: var(--term-green);
+  font-size: 1.15rem;
+}
+.project-modal .modal-body {
+  padding: 1.5rem;
+}
+.project-modal .project-company {
+  color: var(--term-amber);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 1rem;
+}
+.project-modal .project-objective {
+  color: var(--term-text);
+  margin-bottom: 1.25rem;
+  line-height: 1.7;
+}
+.project-modal .project-points {
+  color: var(--term-text-muted);
+  padding-left: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.project-modal .project-points li {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+.project-modal .project-stack span {
+  display: inline-block;
+  border: 1px solid var(--term-green-dim);
+  color: var(--term-green);
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  padding: 0.3em 0.65em;
+  margin: 0 0.4em 0.4em 0;
+  border-radius: 2px;
+}
+.modal-backdrop.show {
+  opacity: 0.85;
+  background-color: #010502;
+}
+
+/* -------- Portfolio grid cursor affordance -------- */
+.portfolio-box {
+  cursor: pointer;
+}
+.portfolio-menu .nav-link {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--term-text-muted);
+}
+.portfolio-menu .nav-link.active,
+.portfolio-menu .nav-link:hover {
+  color: var(--term-green);
+}
+
+/* Always-visible project captions (title shown with or without hover) */
+.portfolio-img {
+  position: relative;
+  overflow: hidden;
+  background: var(--term-panel);
+}
+.portfolio-img img {
+  transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
+}
+.portfolio-box:hover .portfolio-img img {
+  transform: scale(1.04);
+  filter: brightness(1.08);
+}
+.portfolio-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem 1.1rem 0.9rem;
+  background: linear-gradient(
+    to top,
+    rgba(6, 10, 8, 0.95) 0%,
+    rgba(6, 10, 8, 0.65) 55%,
+    rgba(6, 10, 8, 0) 100%
+  );
+  pointer-events: none;
+}
+.portfolio-caption h5 {
+  font-size: 1rem;
+  margin-bottom: 0.15rem;
+}
+.portfolio-caption span {
+  font-size: 0.72rem;
+  color: var(--term-green) !important;
+  letter-spacing: 0.03em;
+}
+.project-trigger {
+  z-index: 2;
+}
+@media (prefers-reduced-motion: reduce) {
+  #main-wrapper::after {
+    display: none;
+  }
+}
+
+/* -------- Mobile: tone the grid down a touch -------- */
+@media (max-width: 768px) {
+  #main-wrapper {
+    background-size: 28px 28px;
+  }
+}
